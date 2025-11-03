@@ -10,7 +10,7 @@ CREATE TABLE obiekty (
     geom GEOMETRY
 );
 
--- a. Falista krzywa (COMPOUNDCURVE) z SRID=0
+-- a. Falista krzywa 
 INSERT INTO obiekty (nazwa, geom)
 VALUES 
     ('obiekt1', ST_SetSRID(
@@ -131,4 +131,5 @@ SELECT
 FROM
     obiekty
 WHERE
+
     ST_HasArc(geom) = FALSE;
