@@ -1,0 +1,1650 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" "C:\SEMESTR 5\Bazy Danych Przestrzennych\Cwiczenia9\fm1czesc.fmw"
+#          --SourceDataset_GEOTIFF "\"\"$(FME_MF_DIR)ras250_gb\data\HP.tif\" \"$(FME_MF_DIR)ras250_gb\data\HT.tif\" \"$(FME_MF_DIR)ras250_gb\data\HU.tif\" \"$(FME_MF_DIR)ras250_gb\data\HW.tif\" \"$(FME_MF_DIR)ras250_gb\data\HX.tif\" \"$(FME_MF_DIR)ras250_gb\data\HY.tif\" \"$(FME_MF_DIR)ras250_gb\data\HZ.tif\" \"$(FME_MF_DIR)ras250_gb\data\NA.tif\" \"$(FME_MF_DIR)ras250_gb\data\NB.tif\" \"$(FME_MF_DIR)ras250_gb\data\NC.tif\" \"$(FME_MF_DIR)ras250_gb\data\ND.tif\" \"$(FME_MF_DIR)ras250_gb\data\NF.tif\" \"$(FME_MF_DIR)ras250_gb\data\NG.tif\" \"$(FME_MF_DIR)ras250_gb\data\NH.tif\" \"$(FME_MF_DIR)ras250_gb\data\NJ.tif\" \"$(FME_MF_DIR)ras250_gb\data\NK.tif\" \"$(FME_MF_DIR)ras250_gb\data\NL.tif\" \"$(FME_MF_DIR)ras250_gb\data\NM.tif\" \"$(FME_MF_DIR)ras250_gb\data\NN.tif\" \"$(FME_MF_DIR)ras250_gb\data\NO.tif\" \"$(FME_MF_DIR)ras250_gb\data\NR.tif\" \"$(FME_MF_DIR)ras250_gb\data\NS.tif\" \"$(FME_MF_DIR)ras250_gb\data\NT.tif\" \"$(FME_MF_DIR)ras250_gb\data\NU.tif\" \"$(FME_MF_DIR)ras250_gb\data\NW.tif\" \"$(FME_MF_DIR)ras250_gb\data\NX.tif\" \"$(FME_MF_DIR)ras250_gb\data\NY.tif\" \"$(FME_MF_DIR)ras250_gb\data\NZ.tif\" \"$(FME_MF_DIR)ras250_gb\data\OV.tif\" \"$(FME_MF_DIR)ras250_gb\data\SC.tif\" \"$(FME_MF_DIR)ras250_gb\data\SD.tif\" \"$(FME_MF_DIR)ras250_gb\data\SE.tif\" \"$(FME_MF_DIR)ras250_gb\data\SH.tif\" \"$(FME_MF_DIR)ras250_gb\data\SJ.tif\" \"$(FME_MF_DIR)ras250_gb\data\SK.tif\" \"$(FME_MF_DIR)ras250_gb\data\SM.tif\" \"$(FME_MF_DIR)ras250_gb\data\SN.tif\" \"$(FME_MF_DIR)ras250_gb\data\SO.tif\" \"$(FME_MF_DIR)ras250_gb\data\SP.tif\" \"$(FME_MF_DIR)ras250_gb\data\SR.tif\" \"$(FME_MF_DIR)ras250_gb\data\SS.tif\" \"$(FME_MF_DIR)ras250_gb\data\ST.tif\" \"$(FME_MF_DIR)ras250_gb\data\SU.tif\" \"$(FME_MF_DIR)ras250_gb\data\SV.tif\" \"$(FME_MF_DIR)ras250_gb\data\SW.tif\" \"$(FME_MF_DIR)ras250_gb\data\SX.tif\" \"$(FME_MF_DIR)ras250_gb\data\SY.tif\" \"$(FME_MF_DIR)ras250_gb\data\SZ.tif\" \"$(FME_MF_DIR)ras250_gb\data\TA.tif\" \"$(FME_MF_DIR)ras250_gb\data\TF.tif\" \"$(FME_MF_DIR)ras250_gb\data\TG.tif\" \"$(FME_MF_DIR)ras250_gb\data\TL.tif\" \"$(FME_MF_DIR)ras250_gb\data\TM.tif\" \"$(FME_MF_DIR)ras250_gb\data\TQ.tif\" \"$(FME_MF_DIR)ras250_gb\data\TR.tif\" \"$(FME_MF_DIR)ras250_gb\data\TV.tif\"\""
+#          --FEATURE_TYPES ""
+#          --DestDataset_GEODATABASE_FILE "$(FME_MF_DIR)Results1.gdb"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABQCAIAAAC4QrSbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAfKklEQVR4nO2deXRc1Zngv/v2V/VqL6mqtO+7vEi2vGGDMWAwhCUESAgJ9HRIh6QzM+lOziQn0zlJp6fnnOFkOn/MTHcf0umZyXTokEBI6LAakthY2AbbeJFs7btKUqn25dWrt9z5Q8JaLAltVRh8f6eO5Xr3vne/V8tX3/2We1FlZSUQCATCxwFm5o+JQRYWAM81IMAIoewNHNdwQs3e5QkfgGjEmrP4Rl4LNgw1kcsBCTcODACYGHS3T8moBsz7XLMc3+JhN39AhABjANAMePq8Gic6K7sg7GxUKRpB7lQWAsTEB3A6lLMRCTcOFABYWMiohqIbijb/gQEDAKJZHjBcfVAUy+792+17rQX3f7Xi/q9aKXZ+68oPBFTpgfvMnhLAwFBg43L6w38jQrEGQnc+9e//+/cevNusGsa1D+uBHXlzT/NKd+Qt2W0tD6xixvRR3znhkwkDAIBhuR9g77b9pvyi/tefBYzB0lq6vz515hVBuhzh75m1vty7ird5Uu3PB+OrGA2hvIZdDQ9/ffj4S1MX2reb9eI0Nokm0SRcudLd29u3STdFmAUhAECCycwZauGnH/1zqyFRJmFIDxaglmRoMC+lJ20MMu3eEZOAS5rCV0YLWuWqQ9UanbQxHtuxZ3761thHfQ8EwjyolZvl0OTYyVd5qxMAIN4ZHAex6iETtAcUl8MEAMDY3HjsVGQ12goAAAxdH2l/bfDo89Ghnv7u7q4r3WfPnnv55dckSXrw0/dn1Wt24xLp/Nk7UGg3S4GujjSAAKDGO8+FMrPNFGNWOjqiABAYGp1zPo11Em1FuN5AlZWVHgHtdsiKZsxvYDlhTwG/6eNxZksmOave/menNpac8/MXFxcVFRW+886ppc+kGDQ/KJATMCAwtDWfhuhcKl4MGAxjySZEc5qjQcf61SNNTz5Y/czzv/7gqb32ni/XvfPffhPcRHkQQmw6BInR5btQiMrdC4QxwLxXgPCxhlmuwQAYSWRBQSRiswNfY9uNjIxarZalzkFgLcUUhz/MHswCBtIzEB+C1etKkxfzNoxz6ORGgOIDWFOWbtYzyJhr6vj7n3XMcwBEO557umOTHfIIUQgv+3phxkRJpUYuf3sQRnII0oHcjUjIGssqrPOK/f2YlL2BJVpXjcAiRdDRcfnanogRVcFp6B9NQJFiJVYOYC25ms6I5g2TR8VL2ztZAgHihTy8jEVjyitjTCbDwBjnTkeoIxeWM2mQ6FFodg0/AJsBY3JTmfB6jGXCdcZabBbeLF2j33jJvKzOWx+s1SouOIAQAgx3fe0vfvydB25b0gKD4m89ee8tbcK8IwVPffep//rNQ03zDt31tb/48fc/+6l5V2h68sEHViHRWuZ32MDA1R36wTce+eED1Sv0a2uumntSduRH3/+zHz1aDAAAO7/xn/Z/pq1g9UMCgmsVJMuygiAIAs9z7OcO7/zul444rNdF5A4hBAce+ee/+tO/3LuMPLc/+K0qAGj5z08/8ZVdNgAAT1WbZ1EnV1uzaw2D4tzb5oSssEDbuApLaYadGupdqqfjticedAwG/cmhxMhk3O2BvrN91MEnHoLT70VjfWf7IgBgr2ytgL6zfe57/+P28EunxhwNpRZ/X3fc7YX+M/2RlUVp2HMYBi5799YOHH0jJi9uFUwizRilDz7+TQ2kssT5vxmD/1B+e1LsSYe8ZirfKsLWW/ffI0jjUsI2JYleg+WoFLP/qcd30rItqZcx8e55wbIywdUfDpit+nDjzm8/2iiO4sHTl7h9Po/hdZaO/vSvX72w6jDCtRzeb3/hd/5HdjZ9+6sNktVFTU9CRpCrBB/L9EcohxxQaBODsPfA7fsGAiNqn1aTb7YYCbzt219tkTgnRDpMWw/+1T2yNJjpl2AdIt19910IQVpOA8Uw3qrKIveR/c0iz373f7wIkFfbbK7Oh55xbqsQv5ykGHC0HeCP/eTMEsZtluAFM83o3I7vfJOjkyWM9savBps/3+IIJiMZ8ChmvqjlT77y0qhZpKfphm98q5ZVkLW7/IFD9FsvZu445BoMmFK9E5XNme03lWRouc5R1P/cP/xjVypn4hM+Qmin0ykxqDrfvO/hPwtPjGDD2H3fY6HxoZEkAMPN65lG4TBn5Wman4oV1uwwG2O945MoEobSHR4jMBJLCRxT23IwzxjrHR/Uk3TAtqNG0m20Sax1VfJ4rGd8wReOo3A6lUpqc1MDTNm21HtVw+HNj/YOznVGNKcL7rqdWzRFzUO0loGkkqmvLACLnHijv7/aVYMMjmcD6bQWO3chWFvmjCFWwoo8jmirwiYozaKyVlEOJmOvXYLWYhuaujghFAOd4gB7KqsopLAyCo9N8fX5sXfDGrr0wjuxudERTaeD2FjVhBRRtCHkBW01j5RzngJbUoh19YNHUEFnEsmhSDj4quzZYzcGTp4aZIt0ITH+81fSn38QnQgow3+cKGlymSKdb4dG5CGbvVSLvXNhuMBWJlwr0uJBEaI1GTKzHaqqKhOJ+IkT7/QPDA4MjY6krLwovnd56B9+eczAGMDsLrM7DdZZZHZmOKuD8zioiUvB89OxTZwvGbHJ5RJHEe/Qq1tu1zNpi2pImFIhJRaU2XgpOfjrPqqp2C4jhj0/6N3l05jgUC+2FNuMcb+h4JQWcFeVGgalKkymt2c6z8Qim05pbjX8b7+7MLWiPDTGSAlCbqfqhGwwGyU8XG1VgfFV1iMK+fsuYwMf96uYX8mHJRbUN9gjnZ1+ecnjg+YdDcku2QEdnUt+mCRaDwcCU/KHf4Yo1pyx1xqrUxkAnpvv2XmXZ+R7/3Q+s3ynB558sOeZ5y+t4nIUxXKRLkNdpQ+L0+z1+hJTtGWwVD31KeuzPz/7IcbnyoMujModOXLnq6++bhjGjDxc5W20IBrXOrBqCrd3j53bwLgroI5c0CNL2umArBUKZ85xvJc1DBTtIj6sTwCzCuuAF+fXbONNZgBQlfRwx9kzSUljs+j1sDBGNBi8VmHddtutJ95ul9Ppq0co1sxW3IwoyKXbeA6M1P4/rl5hsaX7KZ7PpagIQJ3o0iP9M09ZllVVdU6espsRu8luxqXFQGjmrhGAOtGtR5ZOA2bdDZS7NAfyzAcno5mx00RhfQKY/SiLVjtvMutqxjAMlhcsrnxIyTRNL+jLmyU9mVjwpvM8ryjLxNNXhlrGDXriRPu9993z3HPPz//OI0a4dXdt99Dk6ORGbJF1scZpBKK5luZqJaN39I1nR6AlmXs1VVVlrVYmNusGRDRLc6KBMYXQEnbWvCuIPMjKtXdLsYyhruKb3lJfPO+uF8YpRKtVi8VmtChCVrvjUFv9S8fO63qO5miYXtXvDeH6Z1ZhRQMTU/5xmmURorTMjAbyLuy5lNM9sufI51OXX+pha32hEYsTDxnFTlA95frg6YwvT077aoX0RLBvnK50hk52TKzmB06W08ePn3joM59OK+lYNB5PxClGZEuK776p+XtfPvK/njv23OtnAPJqb3LsUpKDkI9CvTHaClLpvir/L54byH2yTUVFeUVFOWAjHIkimmV9pbfurP/0oW3PvX7mx//yZm6d3HV7j0B/h2dv3dDR1+biFkUeh9dtLXDbX/zD+wB5u3YVO2EkmgJGKEKh3piviptMOtn4NIYYw0Mo6bbYqm+yDxyLxeIBKCqSJi8eH/7wsWtKfV//3M1/eK/nV2+c0Z0ZPWEBAD6/3H9irO5wbOA4VV1YDgCMvdxdXv6df3f48J6G7//jv00Go7UlZa4SO0RjTkm7PKpbRShubJbOvfrzwc1/gQgfdxZMFnR1BT9ReOCNN42yUo6zxun8mkYITAJEAJJiyU3bDbfZN5I2b9tCM3JYxill+y5kp139sWngbJkK07Z8qlOAiVWuOTI+7n/ul88DQF5eHk1RFGPi+GhSzpzvGj95YXbiAw4mGLTtsfAXxAJbmpVMxvEL4zm3vgAApqYCfr9fFESO4xDNslRFLJnuG50+eurKbA/RhGWoqhKlaa7OprMMDL09OZgVWQKjk7uaKpKytXZH4eDVwprhiVBFkfuNU7MaMq3GdW/JNnMozvLTYkGBpvRJSLYUVWkZpQBNTtDmjpGzb3PF1VYhSOFIYpWrLiAEvcOB1050jk9FtfGAHhsHsHDRVMN2s5Z2VzQOnL00DgCMLBnWokQqdfT0lUB4JrTCOYwMlBU6w9G6YhlbJOS/1OXf9BeH8Elg2dKcS9i7Pqf7KlmT052rOZyfZ5sOx42FNSjbawrPdWe54M2ATPdrS/qw5k90ZkA0x1UccnvyEqm0smge9VE4uWec7ogXrm2CRa+et+pe6+hvu9NL9lwNLpt09a5XcLqzeY1sQb3LZgqEF/5+uQq3w9i5zawRmsOIT2eG25f1YSEGUblw830wHGBNWS51FtH8sksRZAEMGPR1+XQ+IpZVWFHGbuGz+C7yND7jV8ZTq1JYhqsWGysE/bIIojgquChKuO3We8PvBerujJ5/qXNivr5GNAeuRgNympSPEKLkmBEbmnlaWloyPDwy6//+qORJxYz40JKtjKNa5fgcRwlpTBnBzqUVFmKws8mgc6kjgDEMCF5cIs1CcGFLmYFyl36BATHyNMRXMee/PlhWJY2oAqYWW1g8zynKioqD4XlQFG32zwodJUPX8Go9ToKrLMd1hDZJjCZkAAADMsGuhW0TA8qWFrMmuxt3dE4cX3giZ/MiYWGqfnYwi5yS0TVdBwB15MLV401NjUNDc58/zu5bzsLKjTyLQAwn5tfkQB4AsEpCLJGGGQtrGdsNcRYNIevhL/8Q/vfXRwraLgI0956+CG1tjeVb6zqu5r54qtqg9/QkQNmRHz1RDN0v/+XPR9YtmEqzHG3C2kIbEyHE2TMG8/D3n4Af/WKwDMbBARd7R6Hqljbfzq2DTz8zO2JRcxVc7B0F4OoOffcud+TcH/7uD5PzLlTV1tx7+uJqhcGsGSEG8McjhLoGG8rhsNfX17W3n5w9015eSCXEGpudroHgu91stY92396Y/n17h8lVJlmDA0E03XE5skmvQ1NlwZXByYYK34WeFZYB2BxYhn76Gw9d6B5+4c1z6bSqOhyGxuu6HolGaZrWoxMDr00MLH96ic8ZS6RLvM5ZUXmTE1Khzba77715275tlf/067eH/EHNbtMpJwCklbTAL15jY0aesgLX+11LfMdYngVlCecly1Cqtoaf+ntv3ra/peqZXx0fmpiTR5KkHTtbX3jhxfkxXwqhxsqCdEYdnQzLigrAOq0Qim2yGZjvtP7ke4/95MUT7e/3aVRadTrA0FOyLMsLfBgIMEbi3bb+S+LBW4tdN3lUrrL24S/qA4NmjLwHvvTwF2z6z34ztmtPTTm79S6V083UXFmCycOq0wl/11vq7ofL1bSuO72JsTFTgoqbVqxPQHipgi+MgUJg2eno6jc93LrFhobBE6676QgT6JUwVbzlm0/dbtfe+NfBuluafdyetgxvlFDqv/zdL87f/sQ/Px7qNyNeDbwyXf9ohR5OeA4c9qRAlVB19LcfVgaAIcelnRthDQrL5/MN9A/edNPe9vaThsF6S/O5kRBdWlWrmIdNe1oMt4SPvRkoy6soK/OUJCeCnbqlII+J+DdHY/WPTf/5I7f86+vvAgBAwc33O/GZSa5IDE/phpI6NxrelFGuwrHUfQe3yUrmYs+4RldiPW0WTYJJCIcj7e0nV06zGp0I/+n9+z6ID/gONKX66aqDEbkfHPUHbOqV0NBAWjVnwOO9xzTyw9dWTtJeFgywo6HEMPb+v5dP6WLSSDIAkJeX9/Irr64oDwBvr7WnhIJt5fTEENKRTKkx2gLxoF0sKGkqHLvoT8r94N4qJrpUmOoeD67uDcQALXUlX7x317OvvndVnsrKiscff+zFF3+r63PV0AbGeU7JahJ7hqcAYMv2stAotfVgIjIGxeXNXm1kxD8R04QUOOoP8OfWG07FGHtc1i/evTujasEJTjNXATZisXhXV7emLbwl755ifPHF1N5b9GBmJB6stNi7O8ahzWemGQGmo+Kd+0siA6OJCrfbHD7aLSl9x+J1txUK/o6uRJH8bq/rliMFyTQlTF/snk6N9cIdW9ya/22/onSso8Cr/J58fLI9eXi/nhzpm7I6GaPz3SAcdEoMJUA0Yt55W1Wid0Cu8dqkwJk39NYvPLa/nFY6z0X5w2LH5ZIjpclELOanYNbIjwyd+GQVLaHKykqPiHbbP9zp7na7HA6Hruv9/QvMi8bGho6OzrUOLNFGJDA1uSqnu8TV3AEUUBT1gdPd07rbwrLYmhQFwVqovP/3ZzbzXaEo6nOHW18/eTkQTgCGTPfrRmZVEU5E81zlQcSb5olacmhvPKI5S0AUTcb5CWpbJZbD1gSdkfTRoVDozJV1Wha7t5QDRqcuDWCMtdHzWniJRE1E81zVIcQJ8+ShvOWlhfJY2l5XVsK56EQwTQnYhUKhKWHoXMh+wFPg0GMBI5GM6yO6yREZeH9qVXbWni0VBobTK8oDgNi8RtpbixAggJm8sLadDVNxvcQLdp7Xu0N0bYGRTnhTVMpknJ+I9V8ZXV9Ux2IWHjy0/dlX3lVUzYhPq8PteM6HNRcvoXi7Yi3Huc0ppSiWjfRgdbE+Q/Yqhc6FP2E+rKGhSPfHZckwVFlZyVJw2KvS2Ji/Qt4AuAw2i68dB/qF0YhqrMYWRVzZLUhceqGGLHE1bxunY5mBY6vPH+V8rZS9cPm7MteXweXBTchjvCohpevp4RM4vXRSB+fbQdkLlpfH1tYqdJ6Z3PguN3OZ7oauDC0rD23OZ4p2AkUv2QoA+WUeGJxcp9m5tGSgB3q1QCcAQMst94bOBupvj73/codfBgCKt2ekklXWim4WFMUysYElFJatKkNlYeeXFWEBQ6Tn46SwAIBGIDI5XZ5Y1rC+6okzQghTXC63fpkBA0ZGZq11NogWc+kUwFiHFb9v1508FAcohzEUBFibTdew+cr2bC3RdIsIkZfeOAEAtOBiq26hGZSztHsAAAxK91GcWVzQznq20vm53ifUiE5mRk5+XBTWrA9Lx5BQr1/HG8YYdOUjkW8dg2J9fZOYbHHdyfMRZagAQNQ/+Kp/cNFBiqKe+sz+N093XR746NNVPS7rY3fv/skLx6KJ9efEfYLJYb4cgXDdYDKZ9u3dbRiYYi1cYc2BlupH79r5X5555XcnLkFJ3l5bfiEkJ2yiMjCtmjnwlN1j6ll3eGRlKIqqr6/1erwAQNvKPGVVD9/esndrxVN/++zUorqlpG5NQ3F5s9R149YtEYVFuBFJpVLH325HCGjeKdRIdx9o/OXRc6+8Mxs7MltwCrxbbHF/aV4ERDcKvjy0yWHoqxiGcfly10wgi8lPlGa4jr6xp//P0UBoZsI4r26pXKHTvN59Q9ctzfqwCIQbkxkfFs/Ri0upwLq9Bs51L7tu4oZY6MO6urrGjA+LZWhVW+hRymrd0sfKh0UUFuGGhhIcmlSY+yghFR3GasG81TUGYwCUo1rNZTgCAAAYROHQGtIaEIJd+ZQ9m9u2JzUjMy/LCgOOplF3HGEyJSTc4CCgTN5aQAuCK6LVBLHU5oYqEEINFb4rgxO6bgAGJTZ87eoaNGfiFkUJGd7JqaFVlNyuCVHgCvPsvSNTMGNhrXJFDgAA8InUfSU0xQl6JlthgZPjqgoLLl4s0UGVn04D7XQ6szQqgXD9QzEm2lm2v6U6KSs1pZ7JYAwqKw/oSlldnc3C+Bpqnmz1WB2c7pTKbNa2Hfta9d6L61rGiKHpH3zlU3fua4zFZZqirBB3WJEe879/4WJvZ99AHACAlryMxb1/e2VhvmMqFNMNy97tlmlr4Q6v4LLl33uo2WeRKq2Gx+F0u0pvfaBYO+ufXtddF+Xb/+/fPJHnkIKRpMSBjVEcdpvDYTeZTAzDpD9Y75e1Wvl5JcGSJPE857ZwOwpM27/8A7OnONLfgQ0dADxb9snTfowNgFvrv/GoNXElPJUC5za7OJGeU/w+e5UlHfrwnL+RuK7rC2boNIVGFTapEQuLQAA41zXy2Ttaf/qbdgAAnhZpi4pxnscr6aMvB4sbaftmObwdFrPTLgXCSSTwmNZEE2WJWuLxuQxSwzDSGY1laEXVAYBlBCdtJHSp2MdrZ/vHKgoKBU/9TBnABlZVwxhomnbZJLOJNxIsJfCADVEUMIZIJBIOe+avBAmCcNvttxoGNnQ9lZJdArhKWcGeX33XDjk4MXrid5bCCowNX9uhsXdeA+AZgVZs99U8yeFxK59s9uSLrFBEaX41JdOS7mlzhf7408DYOp2DxIdFuKGhBRdbffNKPTbJ4Y0Q2rul4r3OIUXVQEdKz+vXZrozni1MftWSp8/gqymE7rGNBwklE19f7n2vcxhjbEQmMqOnF67W4Cpp3VVjTbJuQWl/7a2FK84VSehrDVzV3V+YOHciPtYLABTDGpo68y/AXY1fL4yeYyz1JvncCC+ZqVI9PugxpV9KQDFTZJcHCrxFv7/425VWk3hnXFEXzjcFhmqPiFMyJgqLcIODON/2hTvaZRmMDVXWpi7CNRUUiLfR7vrltjvIjjBghAa11MTqzyiS0FfrGYQonLVt01ZQWGRKSLjBwRn/WYSWrW3c/PEALbf4FFai2thptJatxjcqDMZr3mcFYCKF9WymQdA0tVzUligsAgHwdZSFtOLeRtcBqoFejbmTRhbtQKQkmtDS668QhUUgEDZGxU2P+mCCjw5FWUGZhhQNute9F8EkF+iSTXxKaLHAQGJkIu72Qt+ZgY1sFpPrLDUCgfCJY+zUqKPRXljTmC9KFRUtexpsgdFTo/YGW0FFXW1NLRfiOFuc2Vrd5HWstLHNKiBOdwKBsAY8Jsrmys/+lHBBHIA43QkEwnqgEHippJzNxelUWlkuEkAUFoFAWAMGhgnDnF0LSwfvMvqQ+LAIBMImwvDZ3M+UWFgEAmFj2JvvuNUcGhW9rOIPBjU+z1JthI+2d2wkHLgMxMIiEAgbw2ZhMLZZcYrnbBm3y+XlQpynJStDEQuLQCBsjKH2l4fmPe1ftuPGIQqLQCCsDcPQ9dXvebV2GGwsF4QkCotAIKwNiqLprHqTtGUvThQWgUDYGAuc7j0DbLVPDQItRzuGRzd7KOJ0JxAIG2OB072yKr+uuty8rbVg49uJXwuxsAgEwsZY7HQ/mb2hiMIiEAhrgEZQzUYVI5u75hgaaAAArsLSRGhakZNXm4jCIhAIa0DH0KPali3NYXge5m1csS6Qmmiq3+qrahi5/H5pU6ursKzjzV9DxACisAgEwkYp3XnfVquS5BLK5PS0yudbqvXI0ROdG0l0D/mHOdHkLCgBgN6zJ64eJ053AoGwMYam44l0BsscZ1XzXC4vF+LzN5jobnV7RYsN6zpCKK+4kqJnNRWxsAgEwgYZeOutgatP+jbjiqJkxQYe6+mwuvKteV5OMANEgSgsAoGwVhBgBFnMdEcY958/hRAqbtgenfKPXDkvMBSACERhEQiEtYIB4Wwu4AcIAQDGeLjj7KIW4sMiEAgfG4iFRSAQNsb8KGHXAFvr06aBkqMdQ2Mffu4aIRYWgUDYGPOjhNWVnvrKMvOW1sLkh5+4doiFRSAQNsjCKGF7FkciCotAIKwBmoJWIaxmc3vqEOiQWbqJKCwCgbAGdAPOpB0LS3N4SdITiYX1OLxZ0pOJddXoICXRhGJLNtFOp3M9lyQQCDckEosEk1nFc2kNzkN/8tlme7nDKzoRZa6sccj+sHjblx4uUsFhkv3hNADYK1oaHbI/LB584tFmNK0X7W6tMeuqqarGIfsj6YVDID2TjxYsTsNQaCTNJjWisAgEwlq4VmHJKBzhrTxDC1Ox4ppWCY/1jE+hcBhKW704MByTRY6p3X6LB4/1jE/RijohtdaYdBttEmtd1Twe6/EvsqZWUFhkq3oCgbAGPnyretHXUG+PXL48Li95fMi8oy7ZlXZAZ8fU0hdYYat6orAIBMIa8JqoQpctlc2dn42MXA7T849cVVjE6U4gENYABogDn8xmCifC6nKVPyRxlEAgbBBekhabPjzPZ2MkYmERCIQN4Tz0hYccg0F/aiAxOhF3e6H/TH9k35HPpi6/3M1W+0KjVicMGkVOyPjKjIFjk/m1Ht3m4ZTJ6b5xusIZOtXpX3X2A1FYBAJhQ4QG3jyKS0t5zuanvTUNMD0J/RHAKbF4T4vhlnyjsmnrNoZKhdKGrJS2iWWekuSEP8BZ1XJTkwd1COBf9QY7xOlOIBDWwPqjhKtmhSghsbAIBMIaoBGu4WMr7ZpjRKED7AD29Xqx0jgD6tJNRGERCIQ1oGPUrVgXWVgOh11OyWlFAQDgbXaIRpT1D4EyiSYUXbKJKCwCgbAh7HZbRUV5NBodH59IpfibDzZ1/N7fvCNGJ829Ytsd+vOXjD0uFmHX4JU3hjeylQ6QtAYCgbBBGIYZGhpWVc1kEgHUjsvKlm3mVGgqrri3eCeTrmYRYhcvjCfD0fU6teYgTncCgbAG8k2Uy+2O6QsmZxUVFQhBX1//pgxxrdNdZKnjYXGalOYQCIQ1QSGocgk8k8XJGa2rEsz5wDBAUkPnIwhj4sMiEAhrwcDQPZ2mUDZ3zQEAoOf9HxsfrBf4/wGU0H7Dokh9nwAAAABJRU5ErkJggg=="
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4382.77 370"
+#!   DOC_TOP_LEFT="-915.487 -654.378"
+#!   ENABLE_DATA_CACHING="No"
+#!   ENABLE_FEATURE_COUNTING="Yes"
+#!   ENABLE_PERFORMANCE_PROFILING="No"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="25815"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="2a8bc6f2-d2a6-49a9-a980-6e30bd7f6715"
+#!   FME_DOCUMENT_PRIORGUID="85a1faf9-fd9f-4dd8-b678-ad7ee9a3d5fd"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2025.2.1.0 (20251202 - Build 25815 - WIN64)"
+#!   LAST_SAVE_DATE="2025-12-13T13:02:11"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PROMPT_FOR_PARAMS="Yes"
+#!   PYTHON_COMPATIBILITY="313"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   STOP_AT_BREAKPOINTS="No"
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="613.573 -45.7322"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="82"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="GEOTIFF"
+#!   DATASET="$(SourceDataset_GEOTIFF)"
+#!   KEYWORD="GEOTIFF_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   FEATURE_TYPE_CASE=""
+#!   FEATURE_TYPE_LENGTH="0"
+#!   FEATURE_TYPE_INVALID_CHARS=""
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) geotiff_area_or_point char(255) geotiff_byte_order char(7) geotiff_compression_method char(9) geotiff_exif_aperturevalue char(255) geotiff_exif_artist char(255) geotiff_exif_bodyserialnumber char(255) geotiff_exif_brightnessvalue float geotiff_exif_cameraownername char(255) geotiff_exif_cfa_pattern char(255) geotiff_exif_cfa_repeat_pattern_dim char(255) geotiff_exif_cfapattern char(255) geotiff_exif_colorspace decimal(5,0) geotiff_exif_componentsconfiguration char(255) geotiff_exif_compressedbitsperpixel char(255) geotiff_exif_contrast decimal(5,0) geotiff_exif_copyright char(255) geotiff_exif_customrendered decimal(5,0) geotiff_exif_datetime char(20) geotiff_exif_datetimedigitized char(20) geotiff_exif_datetimeoriginal char(20) geotiff_exif_devicesettingdescription char(255) geotiff_exif_digitalzoomratio char(255) geotiff_exif_exifversion char(4) geotiff_exif_exposurebiasvalue char(255) geotiff_exif_exposureindex float geotiff_exif_exposuremode decimal(5,0) geotiff_exif_exposureprogram decimal(5,0) geotiff_exif_exposuretime char(255) geotiff_exif_filesource char(255) geotiff_exif_flash decimal(5,0) geotiff_exif_flashpixversion char(255) geotiff_exif_fnumber char(255) geotiff_exif_focallength char(255) geotiff_exif_focallengthin35mmfilm decimal(5,0) geotiff_exif_focalplaneresolutionunit decimal(5,0) geotiff_exif_focalplanexresolution char(255) geotiff_exif_focalplaneyresolution char(255) geotiff_exif_gaincontrol decimal(5,0) geotiff_exif_gpsaltitude char(255) geotiff_exif_gpsaltituderef char(255) geotiff_exif_gpsareainformation char(255) geotiff_exif_gpsdatestamp char(10) geotiff_exif_gpsdestbearing char(255) geotiff_exif_gpsdestbearingref char(1) geotiff_exif_gpsdestdistance char(255) geotiff_exif_gpsdestdistanceref char(1) geotiff_exif_gpsdestlatitude char(255) geotiff_exif_gpsdestlatituderef char(1) geotiff_exif_gpsdestlongitude char(255) geotiff_exif_gpsdestlongituderef char(1) geotiff_exif_gpsdifferential decimal(5,0) geotiff_exif_gpsdop char(255) geotiff_exif_gpshpositioningerror float geotiff_exif_gpsimgdirection char(255) geotiff_exif_gpsimgdirectionref char(1) geotiff_exif_gpslatitude char(255) geotiff_exif_gpslatituderef char(1) geotiff_exif_gpslongitude char(255) geotiff_exif_gpslongituderef char(1) geotiff_exif_gpsmapdatum char(255) geotiff_exif_gpsmeasuremode char(1) geotiff_exif_gpsprocessingmethod char(255) geotiff_exif_gpssatellites char(255) geotiff_exif_gpsspeed char(255) geotiff_exif_gpsspeedref char(1) geotiff_exif_gpsstatus char(1) geotiff_exif_gpstimestamp char(255) geotiff_exif_gpstrack char(255) geotiff_exif_gpstrackref char(1) geotiff_exif_gpsversionid char(255) geotiff_exif_imagedescription char(255) geotiff_exif_imageuniqueid char(33) geotiff_exif_inter_color_profile char(255) geotiff_exif_interoperability_index char(255) geotiff_exif_interoperability_version char(255) geotiff_exif_iptc_naa char(255) geotiff_exif_isospeed largeint geotiff_exif_isospeedlatitudeyyy largeint geotiff_exif_isospeedlatitudezzz largeint geotiff_exif_isospeedratings decimal(5,0) geotiff_exif_lensmake char(255) geotiff_exif_lensmodel char(255) geotiff_exif_lensserialnumber char(255) geotiff_exif_lensspecification char(255) geotiff_exif_lightsource decimal(5,0) geotiff_exif_make char(255) geotiff_exif_makernote char(255) geotiff_exif_maxaperturevalue char(255) geotiff_exif_meteringmode decimal(5,0) geotiff_exif_model char(255) geotiff_exif_oecf char(255) geotiff_exif_offsettime char(7) geotiff_exif_offsettimedigitized char(7) geotiff_exif_offsettimeoriginal char(7) geotiff_exif_orientation decimal(5,0) geotiff_exif_pixelxdimension decimal(12,0) geotiff_exif_pixelydimension decimal(12,0) geotiff_exif_primarychromaticities char(255) geotiff_exif_recommendedexposureindex largeint geotiff_exif_referenceblackwhite char(255) geotiff_exif_related_image_file_format char(255) geotiff_exif_related_image_length char(255) geotiff_exif_related_image_width char(255) geotiff_exif_relatedsoundfile char(13) geotiff_exif_resolutionunit decimal(5,0) geotiff_exif_saturation decimal(5,0) geotiff_exif_scenecapturetype decimal(5,0) geotiff_exif_scenetype char(255) geotiff_exif_sensingmethod decimal(5,0) geotiff_exif_sensitivitytype decimal(5,0) geotiff_exif_sharpness decimal(5,0) geotiff_exif_shutterspeedvalue char(255) geotiff_exif_software char(255) geotiff_exif_spatialfrequencyresponse char(255) geotiff_exif_spectralsensitivity char(255) geotiff_exif_standardoutputsensitivity largeint geotiff_exif_subjectarea char(255) geotiff_exif_subjectdistance float geotiff_exif_subjectdistancerange decimal(5,0) geotiff_exif_subjectlocation char(255) geotiff_exif_subsectime char(255) geotiff_exif_subsectime_digitized char(255) geotiff_exif_subsectime_original char(255) geotiff_exif_transferfunction char(7680) geotiff_exif_usercomment char(255) geotiff_exif_whitebalance decimal(5,0) geotiff_exif_whitepoint char(255) geotiff_exif_xpauthor char(255) geotiff_exif_xpcomment char(255) geotiff_exif_xpkeywords char(255) geotiff_exif_xpsubject char(255) geotiff_exif_xptitle char(255) geotiff_exif_xresolution char(255) geotiff_exif_ycbcrcoefficients char(255) geotiff_exif_ycbcrpositioning decimal(5,0) geotiff_exif_yresolution char(255) geotiff_interleaving_type char(3) geotiff_number_of_bits_per_cell decimal(1,0) geotiff_photometric_interpretation char(10) geotiff_private_keys{}.id integer geotiff_private_keys{}.type char(6) geotiff_private_keys{}.value char(255) geotiff_pyramid_level{}.num_columns integer geotiff_pyramid_level{}.num_rows integer geotiff_pyramid_num_levels integer geotiff_subdataset_description char(255) geotiff_subdataset_name char(255) geotiff_tifftag_artist char(255) geotiff_tifftag_copyright char(255) geotiff_tifftag_datetime datetime geotiff_tifftag_documentname char(255) geotiff_tifftag_hostcomputer char(255) geotiff_tifftag_imagedescription char(255) geotiff_tifftag_maxsamplevalue integer geotiff_tifftag_minsamplevalue integer geotiff_tifftag_resolutionunit decimal(1,0) geotiff_tifftag_software char(255) geotiff_tifftag_xresolution float geotiff_tifftag_yresolution float geotiff_type char(255) geotiff_xmp_metadata char(254) multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="25815"
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY GEOTIFF_IN_PYRAMID_LEVEL GEOTIFF_IN_PREFER_FILE_CS_UNITS GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH GEOTIFF_OUT_IGNORE_RASTER_TYPE_KEY GEOTIFF_OUT_WRITE_OFFSETS_IN_CS_UNITS GEOTIFF_OUT_WRITE_PROJECTED_COORDSYS_AS_EPSG_CODE GEOTIFF_OUT_WRITE_GEOGRAPHIC_COORDSYS_AS_EPSG_CODE GEOTIFF_OUT_WRITE_GEOGRAPHIC_KEYS_FOR_PROJECTED_COORDSYS GEOTIFF_OUT_WRITE_ESRI_COMPATIBLE_COORDSYS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Raster1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Raster File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE="image/TIFF"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the GeoTIFF file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the GeoTIFF file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="GEODATABASE_FILE"
+#!   DATASET="$(DestDataset_GEODATABASE_FILE)"
+#!   KEYWORD="GEODATABASE_FILE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="64"
+#!   ATTR_CASE="ANY_FIRST_NONNUMERIC"
+#!   FEATURE_TYPE_CASE="ANY_FIRST_NONNUMERIC"
+#!   FEATURE_TYPE_LENGTH="160"
+#!   FEATURE_TYPE_INVALID_CHARS="\\&quot;:?*&lt;&gt;|[%# &apos;&amp;+-=!].^~$,)("
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="geodb_type {FME_GEN_GEOMETRY} GEODB_UPDATE_KEY_COLUMNS &quot;&quot; GEODB_DROP_TABLE NO GEODB_TRUNCATE_TABLE NO fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES GEODB_OBJECT_ID_NAME OBJECTID GEODB_OBJECT_ID_ALIAS OBJECTID GEODB_SHAPE_NAME &quot;&quot; GEODB_SHAPE_ALIAS SHAPE GEODB_CONFIG_KEYWORD DEFAULTS GEODB_FEATURE_DATASET &quot;&quot; GEODB_GRID{1} &quot;&quot; GEODB_AVG_NUM_POINTS &quot;&quot; GEODB_HAS_Z_VALUES &quot;&quot; GEODB_HAS_MEASURES &quot;&quot; GEODB_ANNO_REFERENCE_SCALE &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_db_operation char(8) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) fme_where char(254) geodb_allow_symbol_overrides boolean geodb_ancillary_role char(7) geodb_anno_class_id integer geodb_color char(50) geodb_dim_begin_dimension_x double geodb_dim_begin_dimension_y double geodb_dim_begin_dimension_z double geodb_dim_custom_length double geodb_dim_end_dimension_x double geodb_dim_end_dimension_y double geodb_dim_end_dimension_z double geodb_dim_extn_line_angle double geodb_dim_extn_line_display smallint geodb_dim_length double geodb_dim_line_display smallint geodb_dim_line_x double geodb_dim_line_y double geodb_dim_line_z double geodb_dim_marker_display smallint geodb_dim_style_id integer geodb_dim_text_angle double geodb_dim_text_x double geodb_dim_text_y double geodb_dim_text_z double geodb_dim_type smallint geodb_dim_using_custom_length boolean geodb_feature_class_alias char(254) geodb_feature_dataset char(254) geodb_font_bold boolean geodb_font_charset smallint geodb_font_italic boolean geodb_font_name char(254) geodb_font_point_size double geodb_font_strikethrough boolean geodb_font_style char(254) geodb_font_underline boolean geodb_font_weight smallint geodb_h_align char(50) geodb_linked_feature_id integer geodb_measures char(254) geodb_metadata_string char(254) geodb_primary_axis double geodb_raster_compression_quality integer geodb_raster_compression_type char(100) geodb_raster_pyramid_level integer geodb_raster_pyramid_resample_type char(100) geodb_rel_destination_globalid char(38) geodb_rel_origin_globalid char(38) geodb_right_to_left boolean geodb_rotation double geodb_secondary_axis double geodb_start_angle double geodb_subtype_name char(254) geodb_sweep_angle double geodb_symbol_id integer geodb_text_angle double geodb_text_break_char integer geodb_text_char_spacing double geodb_text_character_width double geodb_text_clip boolean geodb_text_color char(254) geodb_text_feat_class_name char(254) geodb_text_flip_angle double geodb_text_lc_accent_bar_color char(50) geodb_text_lc_accent_bar_width double geodb_text_lc_bg_fill_color char(50) geodb_text_lc_bg_outline_color char(50) geodb_text_lc_bg_outline_width double geodb_text_lc_gap double geodb_text_lc_margin_bottom double geodb_text_lc_margin_left double geodb_text_lc_margin_right double geodb_text_lc_margin_top double geodb_text_lc_style char(20) geodb_text_leader_line char(254) geodb_text_leader_line_anchor_point char(254) geodb_text_leader_line_color char(50) geodb_text_leader_line_tolerance double geodb_text_leader_line_width double geodb_text_line_spacing double geodb_text_ref_scale double geodb_text_scale boolean geodb_text_size double geodb_text_string char(254) geodb_text_string_with_format_tags char(254) geodb_text_word_spacing double geodb_text_x_coord double geodb_text_x_offset double geodb_text_y_coord double geodb_text_y_offset double geodb_type char(25) geodb_v_align char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group,mie_pack%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Upsert,UPSERT,fme_where_builder_clause,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group FME_DISCLOSURE_OPEN%GEODB_FEATURE_DATASET%GEODB_HAS_Z_VALUES%GEODB_HAS_MEASURES%GEODB_ORIGIN_GROUP%GEODB_ANNO_GROUP%GEODB_ADVANCED_GROUP Table Creation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ORIGIN_GROUP GEODB_XY_GROUP%GEODB_Z_GROUP%GEODB_MEASURES_GROUP Origin and Scale&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ANNO_GROUP GEODB_ANNO_REFERENCE_SCALE Annotation&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_ADVANCED_GROUP GEODB_OBJECT_ID_NAME%GEODB_OBJECT_ID_ALIAS%GEODB_SHAPE_ALIAS%GEODB_CONFIG_KEYWORD%GEODB_GRID{1}%GEODB_AVG_NUM_POINTS Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_XY_GROUP GEODB_XORIGIN%GEODB_YORIGIN%GEODB_XYSCALE X/Y&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_Z_GROUP GEODB_ZORIGIN%GEODB_ZSCALE Z&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP GEODB_MEASURES_GROUP GEODB_MEASURES_ORIGIN%GEODB_MEASURES_SCALE Measures&quot; &quot;&quot; &quot;GUI TEXT GEODB_OBJECT_ID_NAME Object ID Field&quot; OBJECTID &quot;GUI TEXT GEODB_OBJECT_ID_ALIAS Object ID Alias&quot; OBJECTID &quot;GUI TEXT GEODB_SHAPE_ALIAS Shape Alias&quot; SHAPE &quot;GUI TEXT GEODB_CONFIG_KEYWORD Configuration Keyword&quot; DEFAULTS &quot;GUI OPTIONAL FLOAT GEODB_GRID{1} Grid 1&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER GEODB_AVG_NUM_POINTS Average Number of Points&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XORIGIN X Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_YORIGIN Y Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_XYSCALE X/Y Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_Z_VALUES yes%no Contains Z Values&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZORIGIN Z Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ZSCALE Z Scale&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE GEODB_HAS_MEASURES yes%no Contains Measures&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_ORIGIN Measure Origin&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_MEASURES_SCALE Measure Scale&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT GEODB_ANNO_REFERENCE_SCALE Annotation Reference Scale&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="Ascending"
+#!   ATTR_NAME_INVALID_CHARS=":. %-#[]&quot;()!?*&apos;&amp;+\/{}|="
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="GEODATABASE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="25815"
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="_GEODBOverwriteGEODB _GEODBOutTransactionType _GEODBOutSimplifyGeometry _GEODBOutXOrigin _GEODBOutYOrigin _GEODBOutScale _GEODBOutZOrigin _GEODBOutZScale _GEODBOutGrid1 _TRANSLATE_SPATIAL_DATA_ONLY _GEODBInResolveDomains _GEODBInResolveSubtypeNames _GEODBInIgnoreNetworkInfo _GEODBInIgnoreRelationshipInfo _GEODBInSplitComplexEdges _GEODBInWhereClause NULL_IN_SPLIT_COMPLEX_ANNOS NULL_IN_CACHE_MULTIPATCH_TEXTURES NULL_IN_SEARCH_METHOD NULL_IN_SEARCH_ORDER NULL_IN_SEARCH_FEATURE NULL_IN_CHECK_SIMPLE_GEOM NULL_IN_MERGE_FEAT_LINKED_ANNOS NULL_IN_READ_THREE_POINT_ARCS NULL_IN_BEGIN_SQL{0} NULL_IN_END_SQL{0} NULL_IN_SIMPLE_DONUT_GEOMETRY _GEODB_IN_ALIAS_MODE GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE GEODATABASE_FILE_OUT_WRITER_MODE GEODATABASE_FILE_OUT_TRANSACTION GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES GEODATABASE_FILE_OUT_FFS_DUMP_FILE GEODATABASE_FILE_OUT_ANNOTATION_UNITS GEODATABASE_FILE_OUT_HAS_MEASURES GEODATABASE_FILE_OUT_MEASURES_ORIGIN GEODATABASE_FILE_OUT_MEASURES_SCALE GEODATABASE_FILE_OUT_COMPRESS_AT_END GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES GEODATABASE_FILE_OUT_PRESERVE_GLOBALID GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE GEODATABASE_FILE_OUT_VALIDATE_FEATURES GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES GEODATABASE_FILE_OUT_BEGIN_SQL{0} GEODATABASE_FILE_OUT_END_SQL{0} GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING_HISTORIC"
+#!   VALUE="ALL"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEF_PARAMETER_WRITER_SPATIAL_NAME"
+#!   VALUE="GEODB_SHAPE_NAME"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="FeatureClass1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Feature Class or Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Specify the Esri File Geodatabase"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_SPATIAL_NAME_EXPECTED"
+#!   VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_SPATIAL_TYPE_EXPECTED"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SQL_EXECUTE_DIRECTIVES"
+#!   VALUE="INCLUDE:NAMED_CONNECTION%DATASET%CREATE_FEATURE_TABLES_FROM_DATA"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_ORDERED_FEATURE_TYPE_READING"
+#!   VALUE="yes"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify the Esri File Geodatabase"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DEFAULT_SPATIAL_NAME"
+#!   VALUE="SHAPE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_SPATIAL_DEFINITION_TABLE"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="decimal(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="globalid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp_offset"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date_only"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time_only"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="bigint"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype(stringset)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="subtype_codes(stringmap)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="range_domain(range_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="coded_domain(coded_domain)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geotiff_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geotiff_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geotiff_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_table"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_pro_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_annotation"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_dimension"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_junction"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_simple_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_complex_edge"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_attributed_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_relationship"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_metadata"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="GEODATABASE_FILE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="GEOTIFF"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   POSITION="-915.48692694474107 -284.37784377843775"
+#!   BOUNDING_RECT="-915.48692694474107 -284.37784377843775 436 65"
+#!   ORDER="500000000000001"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEOTIFF_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   FEAT_GEOMTYPE="geotiff_raster"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_GEOMETRY NAME="" TYPE="geotiff_raster" SPATIAL_TYPE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Extents"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   POSITION="3031.2813128131279 -589.37784377843775"
+#!   BOUNDING_RECT="3031.2813128131279 -589.37784377843775 436 65"
+#!   ORDER="500000000000009"
+#!   COLLAPSED="false"
+#!   KEYWORD="GEODATABASE_FILE_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   FEAT_NAMEDGEOMTYPE="SHAPE,from_first_feature"
+#!   USES_SPATIAL_DEFINITION="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_GEOMETRY NAME="SHAPE" TYPE="from_first_feature" SPATIAL_TYPE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NewName" ATTR_TYPE="char(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Xmin" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Xmax" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ymin" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Ymax" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <NON_GUI_DEFLINE_PARM VALUE="fme_constant_feature_type,YES"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ANNO_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ANNO_REFERENCE_SCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_AVG_NUM_POINTS" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_CONFIG_KEYWORD" PARM_VALUE="DEFAULTS"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_GRID{1}" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_HAS_MEASURES" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_HAS_Z_VALUES" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_ORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_MEASURES_SCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_ALIAS" PARM_VALUE="OBJECTID"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_OBJECT_ID_NAME" PARM_VALUE="OBJECTID"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ORIGIN_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_SHAPE_ALIAS" PARM_VALUE="SHAPE"/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XYSCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_XY_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_YORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ZORIGIN" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_ZSCALE" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="GEODB_Z_GROUP" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="CREATE_IF_MISSING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_update_geometry" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="GEOTIFF_1"
+#!   OVERRIDE="-GEOTIFF_1_DATASET"
+#!   DATASET="GEOTIFF_1/TV.tif&quot;&quot;"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="GEODATABASE_FILE_1"
+#!   OVERRIDE="-GEODATABASE_FILE_1_DATASET"
+#!   DATASET="GEODATABASE_FILE_1/Results1.gdb"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILE_OR_URL SourceDataset_GEOTIFF INCLUDE_WEB_BROWSER%GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|GeoTIFF_Files(*.tif)|*.tif|GeoTIFF_Files(*.tiff)|*.tiff|GeoTIFF_Files(*.itiff)|*.itiff|Overview_Files(*.ovr)|*.ovr|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source GeoTIFF File(s) or URL(s):"
+#!   DEFAULT_VALUE="&quot;&quot;$(FME_MF_DIR)ras250_gb\data\HP.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HT.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NA.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NB.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NC.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\ND.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NF.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NG.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NH.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NJ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NK.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NL.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NN.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NO.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NS.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NT.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\OV.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SC.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SD.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SE.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SH.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SJ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SK.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SN.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SO.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SP.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SS.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\ST.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SV.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TA.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TF.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TG.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TL.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TQ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TV.tif&quot;&quot;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES &quot;&lt;quote&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HP.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HT.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NA.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NB.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NC.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;ND.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NF.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NG.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NH.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NJ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NK.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NL.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NN.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NO.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NS.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NT.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;OV.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SC.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SD.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SE.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SH.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SJ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SK.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SN.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SO.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SP.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SS.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;ST.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SV.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TA.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TF.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TG.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TL.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TQ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TV.tif&lt;quote&gt;&lt;quote&gt;,_FORMAT_OVERRIDE_,GEOTIFF,_DATASET_OVERRIDE_,SourceDataset_GEOTIFF,SPATIAL_GROUP,,COORDINATE_SYSTEM,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,APPLY_GCPS,NO,GCP_INTERPOLATION_METHOD,NearestNeighbor,PREFER_FILE_CS_UNITS,Yes,READ_OFFSETS_IN_CS_UNITS,No,GEOTIFF_RDR_ADV_PARM_GROUP,,PYRAMID_LEVEL,,IGNORE_RASTER_TYPE_KEY,No,SCALE_COLOR_TO_STANDARD_BIT_DEPTH,YES,NETWORK_AUTHENTICATION,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,READER_META_ATTRIBUTES,\&quot;fme_dataset fme_basename\&quot;,FEATURE_TYPE_NAME,FORMAT_NAME,DYNAMIC_WORKFLOW,yes,NATIVELY_HANDLED_WEBSERVICES,\&quot;s3connector,azurestorage,google-cloud-storage\&quot;,_MERGE_SCHEMAS,YES,LENIENT_READ,Yes,_ALLOW_ORDERING_,YES,_MERGE_SCHEMAS,YES&quot; Feature Types to Read"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DEST_GEODATABASE DestDataset_GEODATABASE_FILE File Geodatabase:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Results1.gdb"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9HRU9USUZGIiwicHJvbXB0IjoiU291cmNlIEdlb1RJRkYgRmlsZShzKSBvciBVUkwocyk6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwiZGVmYXVsdFZhbHVlIjoiXCJcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXEhQLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcSFQudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxIVS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXEhXLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcSFgudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxIWS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXEhaLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTkEudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOQi50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5DLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTkQudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxORi50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5HLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTkgudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOSi50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5LLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTkwudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOTS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5OLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTk8udGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOUi50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5TLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTlQudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOVS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5XLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcTlgudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxOWS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXE5aLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcT1YudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTQy50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNELnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU0UudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTSC50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNKLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU0sudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTTS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNOLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU08udGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTUC50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNSLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU1MudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTVC50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNVLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU1YudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTVy50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFNYLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcU1kudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxTWi50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFRBLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcVEYudGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxURy50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFRMLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcVE0udGlmXCIgXCIkKEZNRV9NRl9ESVIpcmFzMjUwX2diXFxkYXRhXFxUUS50aWZcIiBcIiQoRk1FX01GX0RJUilyYXMyNTBfZ2JcXGRhdGFcXFRSLnRpZlwiIFwiJChGTUVfTUZfRElSKXJhczI1MF9nYlxcZGF0YVxcVFYudGlmXCJcIiIsInR5cGUiOiJmaWxlIiwiYWNjZXNzTW9kZSI6InJlYWQiLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJmaWx0ZXJzIjpbeyJmaWx0ZXIiOlsiKi50aWYiLCIqLnRpZmYiLCIqLml0aWZmIiwiKi5vdnIiXSwiZGVzY3JpcHRpb24iOiJHZW9USUZGIEZpbGVzIn0seyJmaWx0ZXIiOlsiKi50aWYiXSwiZGVzY3JpcHRpb24iOiJHZW9USUZGIEZpbGVzIn0seyJmaWx0ZXIiOlsiKi50aWZmIl0sImRlc2NyaXB0aW9uIjoiR2VvVElGRiBGaWxlcyJ9LHsiZmlsdGVyIjpbIiouaXRpZmYiXSwiZGVzY3JpcHRpb24iOiJHZW9USUZGIEZpbGVzIn0seyJmaWx0ZXIiOlsiKi5vdnIiXSwiZGVzY3JpcHRpb24iOiJPdmVydmlldyBGaWxlcyJ9LHsiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXSwiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIn0seyJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il0sImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyJ9LHsiZmlsdGVyIjpbIioiXSwiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMifV0sImFsbG93VVJMIjp0cnVlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZX0seyJuYW1lIjoiRkVBVFVSRV9UWVBFUyIsInByb21wdCI6IkZlYXR1cmUgVHlwZXMgdG8gUmVhZCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyIsInJlcXVpcmVkIjpmYWxzZSwiZGVmYXVsdFZhbHVlIjoiIiwiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMiLCJmb3JtYXQiOiJHRU9USUZGIiwiZGF0YXNldCI6IjxxdW90ZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFAudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFQudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFUudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFcudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFgudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFkudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+SFoudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkEudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkIudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkMudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkQudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkYudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkcudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkgudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkoudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TksudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TkwudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+Tk0udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+Tk4udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+Tk8udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlIudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlMudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlQudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlUudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlcudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlgudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TlkudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+TloudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+T1YudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0MudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0QudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0UudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0gudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0oudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U0sudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U00udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U04udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U08udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1AudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1IudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1MudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1QudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1UudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1YudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1cudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1gudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1kudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+U1oudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VEEudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VEYudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VEcudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VEwudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VE0udGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VFEudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VFIudGlmPHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPlNFTUVTVFI8c3BhY2U+NTxiYWNrc2xhc2g+QmF6eTxzcGFjZT5EYW55Y2g8c3BhY2U+UHJ6ZXN0cnplbm55Y2g8YmFja3NsYXNoPkN3aWN6ZW5pYTk8YmFja3NsYXNoPnJhczI1MF9nYjxiYWNrc2xhc2g+ZGF0YTxiYWNrc2xhc2g+VFYudGlmPHF1b3RlPjxxdW90ZT4iLCJjb25maWd1cmF0aW9uIjpbeyJuYW1lIjoiX0RBVEFTRVRfT1ZFUlJJREVfIiwidmFsdWUiOiJTb3VyY2VEYXRhc2V0X0dFT1RJRkYifSx7Im5hbWUiOiJTUEFUSUFMX0dST1VQIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDT09SRElOQVRFX1NZU1RFTSIsInZhbHVlIjoiIn0seyJuYW1lIjoiVVNFX1NFQVJDSF9FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWCIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NSU5ZIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUFYWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9DT09SRElOQVRFX1NZU1RFTSIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ0xJUF9UT19FTlZFTE9QRSIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJBUFBMWV9HQ1BTIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IkdDUF9JTlRFUlBPTEFUSU9OX01FVEhPRCIsInZhbHVlIjoiTmVhcmVzdE5laWdoYm9yIn0seyJuYW1lIjoiUFJFRkVSX0ZJTEVfQ1NfVU5JVFMiLCJ2YWx1ZSI6IlllcyJ9LHsibmFtZSI6IlJFQURfT0ZGU0VUU19JTl9DU19VTklUUyIsInZhbHVlIjoiTm8ifSx7Im5hbWUiOiJHRU9USUZGX1JEUl9BRFZfUEFSTV9HUk9VUCIsInZhbHVlIjoiIn0seyJuYW1lIjoiUFlSQU1JRF9MRVZFTCIsInZhbHVlIjoiIn0seyJuYW1lIjoiSUdOT1JFX1JBU1RFUl9UWVBFX0tFWSIsInZhbHVlIjoiTm8ifSx7Im5hbWUiOiJTQ0FMRV9DT0xPUl9UT19TVEFOREFSRF9CSVRfREVQVEgiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiUkVBREVSX01FVEFfQVRUUklCVVRFUyIsInZhbHVlIjoiZm1lX2RhdGFzZXQgZm1lX2Jhc2VuYW1lIn0seyJuYW1lIjoiRkVBVFVSRV9UWVBFX05BTUUiLCJ2YWx1ZSI6IkZPUk1BVF9OQU1FIn0seyJuYW1lIjoiRFlOQU1JQ19XT1JLRkxPVyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiTkFUSVZFTFlfSEFORExFRF9XRUJTRVJWSUNFUyIsInZhbHVlIjoiczNjb25uZWN0b3IsYXp1cmVzdG9yYWdlLGdvb2dsZS1jbG91ZC1zdG9yYWdlIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkxFTklFTlRfUkVBRCIsInZhbHVlIjoiWWVzIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dfSwidHlwZSI6Imxpc3Rib3gifSx7Im5hbWUiOiJEZXN0RGF0YXNldF9HRU9EQVRBQkFTRV9GSUxFIiwicHJvbXB0IjoiRmlsZSBHZW9kYXRhYmFzZToiLCJ2YWx1ZVR5cGUiOiJzdHJpbmciLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpUmVzdWx0czEuZ2RiIiwidHlwZSI6ImZpbGUiLCJhY2Nlc3NNb2RlIjoid3JpdGUiLCJpdGVtc1RvU2VsZWN0IjoiZmlsZWdlb2RiIiwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2V9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_GEOTIFF" 
+#!   DEFAULT_VALUE="&quot;&quot;$(FME_MF_DIR)ras250_gb\data\HP.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HT.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\HZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NA.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NB.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NC.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\ND.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NF.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NG.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NH.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NJ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NK.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NL.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NN.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NO.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NS.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NT.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\NZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\OV.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SC.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SD.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SE.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SH.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SJ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SK.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SN.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SO.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SP.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SS.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\ST.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SU.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SV.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SW.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SX.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SY.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\SZ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TA.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TF.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TG.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TL.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TM.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TQ.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TR.tif&quot; &quot;$(FME_MF_DIR)ras250_gb\data\TV.tif&quot;&quot;"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI FILE_OR_URL SourceDataset_GEOTIFF INCLUDE_WEB_BROWSER%GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|GeoTIFF_Files(*.tif)|*.tif|GeoTIFF_Files(*.tiff)|*.tiff|GeoTIFF_Files(*.itiff)|*.itiff|Overview_Files(*.ovr)|*.ovr|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source GeoTIFF File(s) or URL(s):"
+#! />
+#!     <INFO NAME="FEATURE_TYPES" 
+#!   DEFAULT_VALUE=""
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES &quot;&lt;quote&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HP.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HT.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;HZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NA.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NB.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NC.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;ND.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NF.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NG.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NH.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NJ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NK.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NL.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NN.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NO.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NS.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NT.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;NZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;OV.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SC.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SD.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SE.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SH.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SJ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SK.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SN.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SO.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SP.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SS.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;ST.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SU.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SV.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SW.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SX.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SY.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;SZ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TA.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TF.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TG.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TL.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TM.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TQ.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TR.tif&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;SEMESTR&lt;space&gt;5&lt;backslash&gt;Bazy&lt;space&gt;Danych&lt;space&gt;Przestrzennych&lt;backslash&gt;Cwiczenia9&lt;backslash&gt;ras250_gb&lt;backslash&gt;data&lt;backslash&gt;TV.tif&lt;quote&gt;&lt;quote&gt;,_FORMAT_OVERRIDE_,GEOTIFF,_DATASET_OVERRIDE_,SourceDataset_GEOTIFF,SPATIAL_GROUP,,COORDINATE_SYSTEM,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,APPLY_GCPS,NO,GCP_INTERPOLATION_METHOD,NearestNeighbor,PREFER_FILE_CS_UNITS,Yes,READ_OFFSETS_IN_CS_UNITS,No,GEOTIFF_RDR_ADV_PARM_GROUP,,PYRAMID_LEVEL,,IGNORE_RASTER_TYPE_KEY,No,SCALE_COLOR_TO_STANDARD_BIT_DEPTH,YES,NETWORK_AUTHENTICATION,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,READER_META_ATTRIBUTES,\&quot;fme_dataset fme_basename\&quot;,FEATURE_TYPE_NAME,FORMAT_NAME,DYNAMIC_WORKFLOW,yes,NATIVELY_HANDLED_WEBSERVICES,\&quot;s3connector,azurestorage,google-cloud-storage\&quot;,_MERGE_SCHEMAS,YES,LENIENT_READ,Yes,_ALLOW_ORDERING_,YES,_MERGE_SCHEMAS,YES&quot; Feature Types to Read"
+#! />
+#!     <INFO NAME="DestDataset_GEODATABASE_FILE" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Results1.gdb"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DEST_GEODATABASE DestDataset_GEODATABASE_FILE File Geodatabase:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Reprojector"
+#!   VERSION="6"
+#!   POSITION="834.38334383343829 -284.37784377843775"
+#!   BOUNDING_RECT="834.38334383343829 -284.37784377843775 436 65"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="REPROJECTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="DEST" PARM_VALUE="EPSG:4326"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE" PARM_VALUE="NearestNeighbor"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_CELL_SIZE" PARM_VALUE="PreserveCells"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_TOLERANCE" PARM_VALUE="0.0"/>
+#!     <XFORM_PARM PARM_NAME="SOURCE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Reprojector"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="BoundsExtractor"
+#!   VERSION="2"
+#!   POSITION="1368.7636876368761 -344.37784377843775"
+#!   BOUNDING_RECT="1368.7636876368761 -344.37784377843775 436 65"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_xmax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BoundsExtractor"/>
+#!     <XFORM_PARM PARM_NAME="XMAX" PARM_VALUE="_xmax"/>
+#!     <XFORM_PARM PARM_NAME="XMIN" PARM_VALUE="_xmin"/>
+#!     <XFORM_PARM PARM_NAME="YMAX" PARM_VALUE="_ymax"/>
+#!     <XFORM_PARM PARM_NAME="YMIN" PARM_VALUE="_ymin"/>
+#!     <XFORM_PARM PARM_NAME="ZMAX" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ZMIN" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="5"
+#!   POSITION="1903.1440314403144 -463.75218752187504"
+#!   BOUNDING_RECT="1903.1440314403144 -463.75218752187504 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Xmax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="_xmin Xmin RENAME_SET_DEFAULT  _xmax Xmax RENAME_SET_DEFAULT  _ymin Ymin RENAME_SET_DEFAULT  _ymax Ymax RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="KEEP_RENAMED_ONLY" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="MISSING_INPUT_ATTRS" PARM_VALUE="REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="AttributeCreator"
+#!   VERSION="11"
+#!   POSITION="2418.7741877418775 -463.75218752187504"
+#!   BOUNDING_RECT="2418.7741877418775 -463.75218752187504 436 65"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NewName" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Xmin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Xmax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Ymin" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Ymax" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; NewName SET_TO &lt;at&gt;&lt;opencurly&gt;fme_basename&lt;closecurly&gt;_&lt;at&gt;&lt;opencurly&gt;fme_file_size&lt;closecurly&gt;&lt;lf&gt; varchar&lt;openparen&gt;33&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INPUT_PORT_CONNECTED" PARM_VALUE="CONNECTED"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE" PARM_VALUE="NO_OP"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="No Substitution"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="BoundingBoxReplacer"
+#!   VERSION="6"
+#!   POSITION="-328.42219873260024 -344.37784377843775"
+#!   BOUNDING_RECT="-328.42219873260024 -344.37784377843775 466.71875 65"
+#!   ORDER="500000000000010"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="BOX"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="BBANGLE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="BBLONGER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BBSHORTER" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BBTYPE" PARM_VALUE="BB"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BoundingBoxReplacer"/>
+#!     <XFORM_PARM PARM_NAME="BOXTYPE" PARM_IS_LOOKUP="true" PARM_VALUE="2D Bounding Box"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="15"
+#!   TYPE="GeometryRefiner"
+#!   VERSION="0"
+#!   POSITION="303.71765981810768 -344.37784377843775"
+#!   BOUNDING_RECT="303.71765981810768 -344.37784377843775 436 65"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="25815"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryRefiner"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 REPROJECTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="15"
+#!   SOURCE_PORT_DESC="fo 0 BOX"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.95686274509803926,0.95294117647058818,0.92941176470588238,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 313
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_GEOTIFF_1,GEOTIFF_IN_SPATIAL_GROUP_GEOTIFF_1,GEOTIFF_IN_COORDINATE_SYSTEM_GEOTIFF_1,GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1,GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1,GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1,GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1,GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1,GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1,GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1,GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH_GEOTIFF_1,GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1,DestDataset_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_FME_CONNECTION_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_OVERWRITE_GEODB_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_TEMPLATEFILE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_IMPORT_KIND_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_TRANSACTION_TYPE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_SPATIAL_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_SPATIAL_SETTINGS_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_SIMPLIFY_GEOM_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_HAS_Z_VALUES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_GEODB_SHARED_WRT_ADV_PARM_GROUP_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_TRANSACTION_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_FFS_DUMP_FILE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_ANNOTATION_UNITS_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_HAS_MEASURES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_COMPRESS_AT_END_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_PRESERVE_GLOBALID_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_VALIDATE_FEATURES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_BEGIN_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_END_SQL{0}_GEODATABASE_FILE_1,GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES_GEODATABASE_FILE_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_GEOTIFF ""$(FME_MF_DIR)ras250_gb\data\HP.tif" "$(FME_MF_DIR)ras250_gb\data\HT.tif" "$(FME_MF_DIR)ras250_gb\data\HU.tif" "$(FME_MF_DIR)ras250_gb\data\HW.tif" "$(FME_MF_DIR)ras250_gb\data\HX.tif" "$(FME_MF_DIR)ras250_gb\data\HY.tif" "$(FME_MF_DIR)ras250_gb\data\HZ.tif" "$(FME_MF_DIR)ras250_gb\data\NA.tif" "$(FME_MF_DIR)ras250_gb\data\NB.tif" "$(FME_MF_DIR)ras250_gb\data\NC.tif" "$(FME_MF_DIR)ras250_gb\data\ND.tif" "$(FME_MF_DIR)ras250_gb\data\NF.tif" "$(FME_MF_DIR)ras250_gb\data\NG.tif" "$(FME_MF_DIR)ras250_gb\data\NH.tif" "$(FME_MF_DIR)ras250_gb\data\NJ.tif" "$(FME_MF_DIR)ras250_gb\data\NK.tif" "$(FME_MF_DIR)ras250_gb\data\NL.tif" "$(FME_MF_DIR)ras250_gb\data\NM.tif" "$(FME_MF_DIR)ras250_gb\data\NN.tif" "$(FME_MF_DIR)ras250_gb\data\NO.tif" "$(FME_MF_DIR)ras250_gb\data\NR.tif" "$(FME_MF_DIR)ras250_gb\data\NS.tif" "$(FME_MF_DIR)ras250_gb\data\NT.tif" "$(FME_MF_DIR)ras250_gb\data\NU.tif" "$(FME_MF_DIR)ras250_gb\data\NW.tif" "$(FME_MF_DIR)ras250_gb\data\NX.tif" "$(FME_MF_DIR)ras250_gb\data\NY.tif" "$(FME_MF_DIR)ras250_gb\data\NZ.tif" "$(FME_MF_DIR)ras250_gb\data\OV.tif" "$(FME_MF_DIR)ras250_gb\data\SC.tif" "$(FME_MF_DIR)ras250_gb\data\SD.tif" "$(FME_MF_DIR)ras250_gb\data\SE.tif" "$(FME_MF_DIR)ras250_gb\data\SH.tif" "$(FME_MF_DIR)ras250_gb\data\SJ.tif" "$(FME_MF_DIR)ras250_gb\data\SK.tif" "$(FME_MF_DIR)ras250_gb\data\SM.tif" "$(FME_MF_DIR)ras250_gb\data\SN.tif" "$(FME_MF_DIR)ras250_gb\data\SO.tif" "$(FME_MF_DIR)ras250_gb\data\SP.tif" "$(FME_MF_DIR)ras250_gb\data\SR.tif" "$(FME_MF_DIR)ras250_gb\data\SS.tif" "$(FME_MF_DIR)ras250_gb\data\ST.tif" "$(FME_MF_DIR)ras250_gb\data\SU.tif" "$(FME_MF_DIR)ras250_gb\data\SV.tif" "$(FME_MF_DIR)ras250_gb\data\SW.tif" "$(FME_MF_DIR)ras250_gb\data\SX.tif" "$(FME_MF_DIR)ras250_gb\data\SY.tif" "$(FME_MF_DIR)ras250_gb\data\SZ.tif" "$(FME_MF_DIR)ras250_gb\data\TA.tif" "$(FME_MF_DIR)ras250_gb\data\TF.tif" "$(FME_MF_DIR)ras250_gb\data\TG.tif" "$(FME_MF_DIR)ras250_gb\data\TL.tif" "$(FME_MF_DIR)ras250_gb\data\TM.tif" "$(FME_MF_DIR)ras250_gb\data\TQ.tif" "$(FME_MF_DIR)ras250_gb\data\TR.tif" "$(FME_MF_DIR)ras250_gb\data\TV.tif""
+
+DEFAULT_MACRO FEATURE_TYPES 
+
+DEFAULT_MACRO DestDataset_GEODATABASE_FILE $(FME_MF_DIR)Results1.gdb
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_GEOTIFF$encode)} == {}} { puts_real {Parameter 'SourceDataset_GEOTIFF' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_GEODATABASE_FILE$encode)} == {}} { puts_real {Parameter 'DestDataset_GEODATABASE_FILE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} GEOTIFF
+MULTI_READER_KEYWORD{0} GEOTIFF_1
+MULTI_READER_GEN_DIRECTIVES{0} IGNORE_RASTER_TYPE_KEY,No,PYRAMID_LEVEL,,PREFER_FILE_CS_UNITS,Yes,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,READ_OFFSETS_IN_CS_UNITS,No,APPLY_GCPS,NO,GEOTIFF_RDR_ADV_PARM_GROUP,,READER_META_ATTRIBUTES,fme_dataset<space>fme_basename,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MAXY,0,_EXTRA_DATASETS,<quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HT.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HU.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HW.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HX.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HY.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>HZ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NA.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NB.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NC.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>ND.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NF.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NG.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NH.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NJ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NK.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NL.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NM.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NN.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NO.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NR.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NS.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NT.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NU.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NW.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NX.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NY.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>NZ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>OV.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SC.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SD.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SE.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SH.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SJ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SK.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SM.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SN.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SO.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SP.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SR.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SS.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>ST.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SU.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SV.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SW.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SX.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SY.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>SZ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TA.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TF.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TG.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TL.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TM.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TQ.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TR.tif<quote><comma><quote>C:<backslash>SEMESTR<space>5<backslash>Bazy<space>Danych<space>Przestrzennych<backslash>Cwiczenia9<backslash>ras250_gb<backslash>data<backslash>TV.tif<quote>,USE_SEARCH_ENVELOPE,NO,CLIP_TO_ENVELOPE,NO,FEATURE_TYPE_NAME,FORMAT_NAME,DYNAMIC_WORKFLOW,yes,GCP_INTERPOLATION_METHOD,NearestNeighbor,NATIVELY_HANDLED_WEBSERVICES,s3connector<comma>azurestorage<comma>google-cloud-storage,_MERGE_SCHEMAS,YES,SPATIAL_GROUP,,SEARCH_ENVELOPE_MINY,0,GEOTIFF_EXPOSE_FORMAT_ATTRS,,SCALE_COLOR_TO_STANDARD_BIT_DEPTH,YES,LENIENT_READ,Yes,COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MAXX,0,EXPOSE_ATTRS_GROUP,
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} GEODATABASE_FILE
+PRIMARY_DEST_KEYWORD{0} GEODATABASE_FILE_1
+PRIMARY_DEST_GEN_DIRECTIVES{0} CASE_CONTROL_ATTR_NAMES,none,IGNORE_FAILED_FEATURE_ENTRY,no,DUMP_FAILED_FEATURES,no,VALIDATE_FEATURES,no,SIMPLIFY_NETWORK_FEATURES,no,MAX_NUMBER_FAILED_FEATURES,-1,RELATIONSHIP_WRITE_OVERRIDE,no,X_ORIGIN,0,BEGIN_SQL<opencurly>0<closecurly>,,ALWAYS_CREATE_FEATURE_TYPES,NO,ENABLE_LOAD_ONLY_MODE,no,TRANSACTION_INTERVAL,1000,Y_ORIGIN,0,FFS_DUMP_FILE,,TEMPLATEFILE,<lt>Unused<gt>,COMPRESS_AT_END,no,PRESERVE_GLOBALID,no,ANNOTATION_UNITS,unknown_units,CASE_CONTROL_FT_NAMES,none,FEATURE_DATASET_HANDLING,WRITE,GRID_1,0,DEFAULT_Z_VALUE,0,DATASET_TEMPLATE,,HAS_MEASURES,no,XY_SCALE,0,COORDINATE_SYSTEM_GRANULARITY,FEATURE_TYPE,IMPORT_XML_TEMPLATE_GROUP,NO,GEODB_SHARED_WRT_ADV_PARM_GROUP,,SIMPLIFY_GEOM,No,Z_SCALE,0,OVERWRITE_GEODB,NO,HAS_Z_VALUES,auto_detect,TRANSACTION,0,SPATIAL_GROUP,,END_SQL<opencurly>0<closecurly>,,DESTINATION_DATASETTYPE_VALIDATION,Yes,REQUESTED_GEODATABASE_VERSION,CURRENT,ADD_WRITER_NEXT_ACTION,automatic,TRANSACTION_TYPE,TRANSACTIONS,COORDINATE_SYSTEM,,IMPORT_KIND,<lt>Unused<gt>,ENABLE_FAST_DELETES,yes,Z_ORIGIN,0
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOTIFF_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEOTIFF GEOTIFF_1
+GEOTIFF_1_DYNAMIC_WORKFLOW YES
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source GEOTIFF file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_GEOTIFF_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEOTIFF GEOTIFF_1
+DEFAULT_MACRO SourceDataset_GEOTIFF_1 $(SourceDataset_GEOTIFF)
+GUI FILE_OR_URL SourceDataset_GEOTIFF_1 GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|GeoTIFF_Files(*.tif)|*.tif|GeoTIFF_Files(*.tiff)|*.tiff|GeoTIFF_Files(*.itiff)|*.itiff|Overview_Files(*.ovr)|*.ovr|All_Files(*)|* Source GeoTIFF File(s) or URL(s):
+DEFAULT_MACRO GEOTIFF_IN_READER_META_ATTRIBUTES_GEOTIFF_1 fme_dataset fme_basename
+GEOTIFF_1_READER_META_ATTRIBUTES "$(GEOTIFF_IN_READER_META_ATTRIBUTES_GEOTIFF_1)"
+DEFAULT_MACRO GEOTIFF_IN_FEATURE_TYPE_NAME_GEOTIFF_1 FORMAT_NAME
+GEOTIFF_1_FEATURE_TYPE_NAME "$(GEOTIFF_IN_FEATURE_TYPE_NAME_GEOTIFF_1)"
+DEFAULT_MACRO GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1 
+GEOTIFF_1_EXPOSE_ATTRS_GROUP "$(GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1)"
+DEFAULT_MACRO GEOTIFF_IN_SPATIAL_GROUP_GEOTIFF_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOTIFF_IN_SPATIAL_GROUP_GEOTIFF_1 GEOTIFF_IN_COORDINATE_SYSTEM_GEOTIFF_1%GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1%GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1%GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1%GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1 Spatial
+DEFAULT_MACRO GEOTIFF_IN_COORDINATE_SYSTEM_GEOTIFF_1 
+GEOTIFF_1_COORDINATE_SYSTEM "$(GEOTIFF_IN_COORDINATE_SYSTEM_GEOTIFF_1)"
+GUI OPTIONAL COORDSYS GEOTIFF_IN_COORDINATE_SYSTEM_GEOTIFF_1 Coordinate System:
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1 NO
+GEOTIFF_1_USE_SEARCH_ENVELOPE "$(GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1)"
+GUI ACTIVEDISCLOSUREGROUP GEOTIFF_IN_USE_SEARCH_ENVELOPE_GEOTIFF_1 GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1%GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1%GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1%GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1%GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1%GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1%GEOTIFF_IN_SEARCH_METHOD%GEOTIFF_IN_SEARCH_METHOD_FILTER%GEOTIFF_IN_SEARCH_ORDER%GEOTIFF_IN_SEARCH_FEATURE%GEOTIFF_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1 <Unused>,0 
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1 <Unused>,0 
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1 <Unused>,0 
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1 <Unused>,0 
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1 <Unused>, 
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1 
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1)"
+GUI OPTIONAL COORDSYS GEOTIFF_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1 <Unused>,NO 
+DEFAULT_MACRO GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1 NO
+GEOTIFF_1_CLIP_TO_ENVELOPE "$(GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1)"
+GUI OPTIONAL CHECKBOX GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1 NO
+GEOTIFF_1_APPLY_GCPS "$(GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1)"
+GUI ACTIVEDISCLOSUREGROUP GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1 GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 Apply GCP's
+DEFAULT_MACRO GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 NearestNeighbor
+GEOTIFF_1_GCP_INTERPOLATION_METHOD "$(GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1)"
+GUI LOOKUP_CHOICE GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 Nearest<space>Neighbor,NearestNeighbor%Bilinear,Bilinear%Bicubic,Bicubic GCP Interpolation Method
+GUI LOOKUP GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 <Unused>,NearestNeighbor 
+DEFAULT_MACRO GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1 Yes
+GEOTIFF_1_PREFER_FILE_CS_UNITS "$(GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1 Yes%No Prefer File Coordinate System Units:
+DEFAULT_MACRO GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1 No
+GEOTIFF_1_READ_OFFSETS_IN_CS_UNITS "$(GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1 Yes%No Offsets in Coordinate System Units:
+DEFAULT_MACRO GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1 
+GUI OPTIONAL DISCLOSUREGROUP GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1 GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1%GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1%GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH_GEOTIFF_1 Advanced
+DEFAULT_MACRO GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1 
+GEOTIFF_1_PYRAMID_LEVEL "$(GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1)"
+GUI OPTIONAL INTEGER GEOTIFF_IN_PYRAMID_LEVEL_GEOTIFF_1 Pyramid Level to Read:
+DEFAULT_MACRO GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1 No
+GEOTIFF_1_IGNORE_RASTER_TYPE_KEY "$(GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1 Yes%No Ignore Raster Type Key:
+DEFAULT_MACRO GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH_GEOTIFF_1 YES
+GEOTIFF_1_SCALE_COLOR_TO_STANDARD_BIT_DEPTH "$(GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH_GEOTIFF_1)"
+GUI LOOKUP_CHOICE GEOTIFF_IN_SCALE_COLOR_TO_STANDARD_BIT_DEPTH_GEOTIFF_1 "\"Scale to Standard Bit Depth\",YES"%"\"Do Not Scale\",NO" Non-standard Color Bit Depth:
+DEFAULT_MACRO GEOTIFF_IN_LENIENT_READ_GEOTIFF_1 Yes
+GEOTIFF_1_LENIENT_READ "$(GEOTIFF_IN_LENIENT_READ_GEOTIFF_1)"
+DEFAULT_MACRO GEOTIFF_IN_NATIVELY_HANDLED_WEBSERVICES_GEOTIFF_1 s3connector,azurestorage,google-cloud-storage
+GEOTIFF_1_NATIVELY_HANDLED_WEBSERVICES "$(GEOTIFF_IN_NATIVELY_HANDLED_WEBSERVICES_GEOTIFF_1)"
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1 
+GEOTIFF_1_NETWORK_AUTHENTICATION "$(GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1)"
+GUI OPTIONAL AUTHENTICATOR GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO GEOTIFF_IN_ATTRIBUTE_READING_GEOTIFF_1 ALL
+GEOTIFF_1_ATTRIBUTE_READING "$(GEOTIFF_IN_ATTRIBUTE_READING_GEOTIFF_1)"
+# ============================================================================
+GEOTIFF_1_GENERATE_FME_BUILD_NUM 25815
+GEOTIFF_1_DATASET "$(SourceDataset_GEOTIFF_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEODATABASE_FILE_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER GEODATABASE_FILE GEODATABASE_FILE_1
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the GEODB files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+GUI SOURCE_GEODATABASE DestDataset_GEODATABASE_FILE_1 File Geodatabase:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_FME_CONNECTION_GROUP_GEODATABASE_FILE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_FILE_OUT_FME_CONNECTION_GROUP_GEODATABASE_FILE_1 GEODATABASE_FILE_OUT_DATASET%GEODATABASE_FILE_OUT_NAMED_CONNECTION%GEODATABASE_FILE_OUT_OVERWRITE_GEODB_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_TRANSACTION_TYPE_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_FILE_1 Database Connection
+# ============================================================================
+# Determines if dataset has to be overwritten
+DEFAULT_MACRO GEODATABASE_FILE_OUT_OVERWRITE_GEODB_GEODATABASE_FILE_1 NO
+GEODATABASE_FILE_1_OVERWRITE_GEODB "$(GEODATABASE_FILE_OUT_OVERWRITE_GEODB_GEODATABASE_FILE_1)"
+GUI ACTIVEDISCLOSUREGROUP GEODATABASE_FILE_OUT_OVERWRITE_GEODB_GEODATABASE_FILE_1 FME_DISCLOSURE_OPEN%GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1 Overwrite Existing Geodatabase
+DEFAULT_MACRO GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1 
+GEODATABASE_FILE_1_DATASET_TEMPLATE "$(GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1)"
+GUI OPTIONAL SOURCE_GEODATABASE_CFG GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1 SWIZZLER:NO Template File Geodatabase
+GUI LOOKUP GEODATABASE_FILE_OUT_DATASET_TEMPLATE_GEODATABASE_FILE_1 <Unused>, 
+# ============================================================================__
+# Contains options relating to importing XML template files.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_FILE_1 NO
+GEODATABASE_FILE_1_IMPORT_XML_TEMPLATE_GROUP "$(GEODATABASE_FILE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_FILE_1)"
+GUI ACTIVEDISCLOSUREGROUP GEODATABASE_FILE_OUT_IMPORT_XML_TEMPLATE_GROUP_GEODATABASE_FILE_1 GEODATABASE_FILE_OUT_TEMPLATEFILE_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_IMPORT_KIND_GEODATABASE_FILE_1 Import XML Workspace Document
+# ============================================================================__
+# Optional template file can be specified. This will load the schema
+# of the template file into the database before any writing occurs.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_TEMPLATEFILE_GEODATABASE_FILE_1 <Unused>
+GEODATABASE_FILE_1_TEMPLATEFILE "$(GEODATABASE_FILE_OUT_TEMPLATEFILE_GEODATABASE_FILE_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST GEODATABASE_FILE_OUT_TEMPLATEFILE_GEODATABASE_FILE_1 XML_Geodatabase_Files(*.xml)|*.xml|(*.zip)|*.zip|(*.z)|*.z|All_files(*)|* XML Workspace Document:
+# ============================================================================__
+# FMEENGINE-10409
+# Add option to import data from template, rather than just the schema.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_IMPORT_KIND_GEODATABASE_FILE_1 <Unused>
+GEODATABASE_FILE_1_IMPORT_KIND "$(GEODATABASE_FILE_OUT_IMPORT_KIND_GEODATABASE_FILE_1)"
+GUI CHOICE_ENCODED GEODATABASE_FILE_OUT_IMPORT_KIND_GEODATABASE_FILE_1 Schema<space>Only%Data<space>and<space>Schema Import
+# ============================================================================
+# This option specifies the transaction type. This should be set to EDIT_SESSION
+# when edits are made to tables/feature classes that have custom behaviour
+# associated with them - i.e. when writing to feature classes that are involved
+# in relationships. Both TRANSACTIONS and NONE can be chosen only when writing
+# to tables/feature classes that do not have custom behaviour.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_TRANSACTION_TYPE_GEODATABASE_FILE_1 TRANSACTIONS
+GEODATABASE_FILE_1_TRANSACTION_TYPE "$(GEODATABASE_FILE_OUT_TRANSACTION_TYPE_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_TRANSACTION_TYPE_GEODATABASE_FILE_1 Edit<space>Session,EDIT_SESSION%Transactions,TRANSACTIONS%None,NONE Transaction Type:
+# ============================================================================__
+# Specifies how the writer should handle feature datasets whether set on the feature type or the feature
+DEFAULT_MACRO GEODATABASE_FILE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_FILE_1 WRITE
+GEODATABASE_FILE_1_FEATURE_DATASET_HANDLING "$(GEODATABASE_FILE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_FEATURE_DATASET_HANDLING_GEODATABASE_FILE_1 Write<space>Feature<space>Dataset,WRITE%Warn<space>and<space>Ignore<space>Feature<space>Dataset,IGNORE%Error<space>and<space>End<space>Translation,END%Off<space>-<space>Slashes<space>become<space>underscores,OFF Feature Dataset Handling:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_SPATIAL_GROUP_GEODATABASE_FILE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_FILE_OUT_SPATIAL_GROUP_GEODATABASE_FILE_1 GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_SPATIAL_SETTINGS_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE_GEODATABASE_FILE_1 Spatial
+DEFAULT_MACRO GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GEODATABASE_FILE_1 
+GEODATABASE_FILE_1_COORDINATE_SYSTEM "$(GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GEODATABASE_FILE_1)"
+GUI OPTIONAL COORDSYS GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GEODATABASE_FILE_1 Coordinate System:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_SPATIAL_SETTINGS_GEODATABASE_FILE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_FILE_OUT_SPATIAL_SETTINGS_GEODATABASE_FILE_1 GEODATABASE_FILE_OUT_SIMPLIFY_GEOM_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_HAS_Z_VALUES_GEODATABASE_FILE_1 Geometry
+# ============================================================================
+# Specifies if the geomtery is to be simplified or not. Default is no
+DEFAULT_MACRO GEODATABASE_FILE_OUT_SIMPLIFY_GEOM_GEODATABASE_FILE_1 No
+GEODATABASE_FILE_1_SIMPLIFY_GEOM "$(GEODATABASE_FILE_OUT_SIMPLIFY_GEOM_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_SIMPLIFY_GEOM_GEODATABASE_FILE_1 Yes%No Simplify Geometry:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_X_ORIGIN_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_X_ORIGIN "$(GEODATABASE_FILE_OUT_X_ORIGIN_GEODATABASE_FILE_1)"
+DEFAULT_MACRO GEODATABASE_FILE_OUT_Y_ORIGIN_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_Y_ORIGIN "$(GEODATABASE_FILE_OUT_Y_ORIGIN_GEODATABASE_FILE_1)"
+DEFAULT_MACRO GEODATABASE_FILE_OUT_XY_SCALE_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_XY_SCALE "$(GEODATABASE_FILE_OUT_XY_SCALE_GEODATABASE_FILE_1)"
+# ============================================================================
+# Determines if dataset contains Z values. This value will be used if DEF lines
+# don't have anything set. The auto_detect option will use the first feature
+# headed for each feature class to determine whether the feature class should be
+# 2D or 3D.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_HAS_Z_VALUES_GEODATABASE_FILE_1 auto_detect
+GEODATABASE_FILE_1_HAS_Z_VALUES "$(GEODATABASE_FILE_OUT_HAS_Z_VALUES_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_HAS_Z_VALUES_GEODATABASE_FILE_1 Yes,yes%No,no%Auto<space>Detect,auto_detect Contains Z Values:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_Z_ORIGIN_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_Z_ORIGIN "$(GEODATABASE_FILE_OUT_Z_ORIGIN_GEODATABASE_FILE_1)"
+DEFAULT_MACRO GEODATABASE_FILE_OUT_Z_SCALE_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_Z_SCALE "$(GEODATABASE_FILE_OUT_Z_SCALE_GEODATABASE_FILE_1)"
+DEFAULT_MACRO GEODATABASE_FILE_OUT_GRID_1_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_GRID_1 "$(GEODATABASE_FILE_OUT_GRID_1_GEODATABASE_FILE_1)"
+GUI LOOKUP GEODATABASE_FILE_OUT_Z_ORIGIN_GEODATABASE_FILE_1 <Unused>,0 
+GUI LOOKUP GEODATABASE_FILE_OUT_Z_SCALE_GEODATABASE_FILE_1 <Unused>,0 
+# ============================================================================
+# Determines default Z value
+DEFAULT_MACRO GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_DEFAULT_Z_VALUE "$(GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE_GEODATABASE_FILE_1)"
+GUI FLOAT GEODATABASE_FILE_OUT_DEFAULT_Z_VALUE_GEODATABASE_FILE_1 Default Z Value:
+DEFAULT_MACRO GEODATABASE_FILE_OUT_GEODB_SHARED_WRT_ADV_PARM_GROUP_GEODATABASE_FILE_1 
+GUI OPTIONAL DISCLOSUREGROUP GEODATABASE_FILE_OUT_GEODB_SHARED_WRT_ADV_PARM_GROUP_GEODATABASE_FILE_1 GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_TRANSACTION_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_FFS_DUMP_FILE_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_ANNOTATION_UNITS_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_HAS_MEASURES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_MEASURES_ORIGIN%GEODATABASE_FILE_OUT_MEASURES_SCALE%GEODATABASE_FILE_OUT_COMPRESS_AT_END_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_PRESERVE_GLOBALID_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_VALIDATE_FEATURES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_BEGIN_SQL{0}_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_END_SQL{0}_GEODATABASE_FILE_1%GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES_GEODATABASE_FILE_1 Advanced
+# ============================================================================
+# Determines version of geodatabase to create
+DEFAULT_MACRO GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION_GEODATABASE_FILE_1 CURRENT
+GEODATABASE_FILE_1_REQUESTED_GEODATABASE_VERSION "$(GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_REQUESTED_GEODATABASE_VERSION_GEODATABASE_FILE_1 Current,CURRENT%10.0%9.3 Geodatabase Version:
+# ============================================================================
+# This option specifies the starting transaction number. Normally
+# this will be zero, which will write every feature to the Geodatabase,
+# but it might be another value if a previous translation was interrupted.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_TRANSACTION_GEODATABASE_FILE_1 0
+GEODATABASE_FILE_1_TRANSACTION "$(GEODATABASE_FILE_OUT_TRANSACTION_GEODATABASE_FILE_1)"
+GUI OPTIONAL INTEGER GEODATABASE_FILE_OUT_TRANSACTION_GEODATABASE_FILE_1 Transaction Number:
+# ============================================================================
+# This option specifies how many features will be written to the Geodatabase on
+# each transaction.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL_GEODATABASE_FILE_1 1000
+GEODATABASE_FILE_1_TRANSACTION_INTERVAL "$(GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL_GEODATABASE_FILE_1)"
+GUI OPTIONAL INTEGER GEODATABASE_FILE_OUT_TRANSACTION_INTERVAL_GEODATABASE_FILE_1 Features Per Transaction
+# ============================================================================
+# Determines whether to continue the translation, despite having encountered
+# a feature that would normally stop the translation.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_IGNORE_FAILED_FEATURE_ENTRY "$(GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_IGNORE_FAILED_FEATURE_ENTRY_GEODATABASE_FILE_1 yes%no Ignore Failed Features:
+# ============================================================================
+# The number of features to ignore before stopping a translation due to a
+# problematic feature. Used only if IGNORE_FAILED_FEATURE_ENTRY is 'yes'.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_FILE_1 -1
+GEODATABASE_FILE_1_MAX_NUMBER_FAILED_FEATURES "$(GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_FILE_1)"
+GUI OPTIONAL INTEGER GEODATABASE_FILE_OUT_MAX_NUMBER_FAILED_FEATURES_GEODATABASE_FILE_1 Max number of features to ignore:
+# ============================================================================
+# Determines whether to store failed features in an FFS file, so that they
+# can be viewed/manipulated at a later time. Only applicable if the keyword
+# IGNORE_FAILED_FEATURE_ENTRY is set to 'yes'.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_DUMP_FAILED_FEATURES "$(GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_DUMP_FAILED_FEATURES_GEODATABASE_FILE_1 yes%no Dump Failed Features to File:
+# ============================================================================
+# If the keyword DUMP_FAILED_FEATURES is set to 'yes', determines where to
+# store the failed features. The location must specify both the path and the
+# filename. The filename must have an extension of 'ffs'.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_FFS_DUMP_FILE_GEODATABASE_FILE_1 
+GEODATABASE_FILE_1_FFS_DUMP_FILE "$(GEODATABASE_FILE_OUT_FFS_DUMP_FILE_GEODATABASE_FILE_1)"
+GUI OPTIONAL FILENAME GEODATABASE_FILE_OUT_FFS_DUMP_FILE_GEODATABASE_FILE_1 FME_Feature_Store_Files(*.ffs)|*.ffs|All_files(*)|* Failed Feature Dump filename:
+# ============================================================================
+# Specifies the units to use when creating a new annotation feature class.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_ANNOTATION_UNITS_GEODATABASE_FILE_1 unknown_units
+GEODATABASE_FILE_1_ANNOTATION_UNITS "$(GEODATABASE_FILE_OUT_ANNOTATION_UNITS_GEODATABASE_FILE_1)"
+GUI OPTIONAL LOOKUP_CHOICE GEODATABASE_FILE_OUT_ANNOTATION_UNITS_GEODATABASE_FILE_1 "\"Unknown Units\",unknown_units"%"\"Decimal Degrees\",decimal_degrees"%Inches,inches%Points,points%Feet,feet%Yards,yards%Miles,miles%"\"Nautical Miles\",nautical_miles"%Millimeters,millimeters%Centimeters,centimeters%Meters,meters%Kilometers,kilometers%Decimeters,decimeters Annotation Units:
+# ============================================================================
+# Determines if dataset contains Measures. This value will be used if DEF lines
+# don't have anything set.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_HAS_MEASURES_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_HAS_MEASURES "$(GEODATABASE_FILE_OUT_HAS_MEASURES_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_HAS_MEASURES_GEODATABASE_FILE_1 yes%no Contains Measures
+# ============================================================================
+# Determines if the output Geodatabase is to be compacted or not. Note: This
+# directive is incorrectly called COMPRESS when in fact it is doing COMPACT.
+# Mobile Geodatabase can't do this, so don't expose the parameter.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_COMPRESS_AT_END_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_COMPRESS_AT_END "$(GEODATABASE_FILE_OUT_COMPRESS_AT_END_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_COMPRESS_AT_END_GEODATABASE_FILE_1 yes%no Compact Database When Done:
+# ============================================================================
+# Enable fast deletes which will combine the WHERE clause (delete) conditions
+# and only create one query to the table per transaction
+DEFAULT_MACRO GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES_GEODATABASE_FILE_1 yes
+GEODATABASE_FILE_1_ENABLE_FAST_DELETES "$(GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES_GEODATABASE_FILE_1)"
+GUI CHOICE GEODATABASE_FILE_OUT_ENABLE_FAST_DELETES_GEODATABASE_FILE_1 yes%no Enable Fast Deletes:
+# ============================================================================
+# Preserve GlobalIDs
+DEFAULT_MACRO GEODATABASE_FILE_OUT_PRESERVE_GLOBALID_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_PRESERVE_GLOBALID "$(GEODATABASE_FILE_OUT_PRESERVE_GLOBALID_GEODATABASE_FILE_1)"
+GUI CHOICE GEODATABASE_FILE_OUT_PRESERVE_GLOBALID_GEODATABASE_FILE_1 yes%no Preserve GlobalID:
+# ============================================================================
+# Enable Load Only Mode when inserting features. This will disable updating of the spatial index
+# while data is loading, and rebuild the index after writing is done.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_ENABLE_LOAD_ONLY_MODE "$(GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_FILE_1)"
+GUI CHOICE GEODATABASE_FILE_OUT_ENABLE_LOAD_ONLY_MODE_GEODATABASE_FILE_1 yes%no Enable Load Only Mode:
+# ============================================================================
+# When enabled, the user will be allowed to write to attributed relationships directly.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_RELATIONSHIP_WRITE_OVERRIDE "$(GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE_GEODATABASE_FILE_1)"
+GUI CHOICE GEODATABASE_FILE_OUT_RELATIONSHIP_WRITE_OVERRIDE_GEODATABASE_FILE_1 yes%no Override Relationship Writing:
+# ============================================================================
+# Determines whether to perform validation on features being written to the
+# geodatabase. Default is no.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_VALIDATE_FEATURES_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_VALIDATE_FEATURES "$(GEODATABASE_FILE_OUT_VALIDATE_FEATURES_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_VALIDATE_FEATURES_GEODATABASE_FILE_1 yes%no Validate Features to Write:
+# ============================================================================
+# Determines whether to perform simplification on network features being
+# written to the geodatabase. Default is no.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_FILE_1 no
+GEODATABASE_FILE_1_SIMPLIFY_NETWORK_FEATURES "$(GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_FILE_1)"
+GUI OPTIONAL CHOICE GEODATABASE_FILE_OUT_SIMPLIFY_NETWORK_FEATURES_GEODATABASE_FILE_1 yes%no Simplify Network Features:
+# ==============================================================================
+# The following specifies an SQL command to execute before opening the first
+# Geodatabase table.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_BEGIN_SQL{0}_GEODATABASE_FILE_1 
+GEODATABASE_FILE_1_BEGIN_SQL{0} "$(GEODATABASE_FILE_OUT_BEGIN_SQL{0}_GEODATABASE_FILE_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_FILE_OUT_BEGIN_SQL{0}_GEODATABASE_FILE_1 MODE,SQL;FORMAT,GEODATABASE_FILE SQL To Run Before Write
+# ==============================================================================
+# The following specifies an SQL command to execute after closing all the
+# Geodatabase tables.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_END_SQL{0}_GEODATABASE_FILE_1 
+GEODATABASE_FILE_1_END_SQL{0} "$(GEODATABASE_FILE_OUT_END_SQL{0}_GEODATABASE_FILE_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG GEODATABASE_FILE_OUT_END_SQL{0}_GEODATABASE_FILE_1 MODE,SQL;FORMAT,GEODATABASE_FILE SQL To Run After Write
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO GEODATABASE_FILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEODATABASE_FILE_1 Yes
+GEODATABASE_FILE_1_DESTINATION_DATASETTYPE_VALIDATION "$(GEODATABASE_FILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_GEODATABASE_FILE_1)"
+DEFAULT_MACRO GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GRANULARITY_GEODATABASE_FILE_1 FEATURE_TYPE
+GEODATABASE_FILE_1_COORDINATE_SYSTEM_GRANULARITY "$(GEODATABASE_FILE_OUT_COORDINATE_SYSTEM_GRANULARITY_GEODATABASE_FILE_1)"
+# ==============================================================================
+# This keyword determines whether we enable creating tables when only receiving
+# a schema feature or not receiving any data.
+DEFAULT_MACRO GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES_GEODATABASE_FILE_1 NO
+GEODATABASE_FILE_1_ALWAYS_CREATE_FEATURE_TYPES "$(GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES_GEODATABASE_FILE_1)"
+GUI LOOKUP_CHOICE GEODATABASE_FILE_OUT_ALWAYS_CREATE_FEATURE_TYPES_GEODATABASE_FILE_1 YES,YES%NO,NO Always Create Tables
+# ============================================================================
+GEODATABASE_FILE_1_GENERATE_FME_BUILD_NUM 25815
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_GEODATABASE_FILE_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER GEODATABASE_FILE GEODATABASE_FILE_1
+DEFAULT_MACRO DestDataset_GEODATABASE_FILE_1 $(DestDataset_GEODATABASE_FILE)
+GEODATABASE_FILE_1_DATASET "$(DestDataset_GEODATABASE_FILE_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2025.2.1.0 (20251202 - Build 25815 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_GEOTIFF_1 GEOTIFF_1
+DEFAULT_MACRO DATASET_KEYWORD_GEODATABASE_FILE_1 GEODATABASE_FILE_1
+# -------------------------------------------------------------------------
+
+GEOTIFF_1_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+GEOTIFF_1_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+GEOTIFF_1_DEF GEOTIFF
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_GEOTIFF_1)   INPUT FEATURE_TYPE *    ROUTE GEOTIFF GEOTIFF_1::GEOTIFF multi_reader_keyword,$(DATASET_KEYWORD_GEOTIFF_1) TO FME_GENERIC ::GEOTIFF ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+GEOTIFF_1_MERGE_DEF GEOTIFF_1::GEOTIFF GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GEOTIFF_GEOTIFF_1 Splitter"    INPUT FEATURE_TYPE GEOTIFF    OUTPUT FEATURE_TYPE GEOTIFF_GEOTIFF_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+# check if we have to do the min bounding box calculation
+INCLUDE [    if { {BB} == {MINBB} } {       puts {MACRO BoundingBoxReplacer_BBFunc @Force2D() @Bounds(fme_encoded,MIN_BOUNDING,,,<Unused>)};    } elseif { {BB} == {BB} } {       puts {MACRO BoundingBoxReplacer_BBFunc @Force2D() @Bounds(fme_encoded,BOUNDING_BOX_AXIS_ALIGNED,,)};    } else {       puts {MACRO BoundingBoxReplacer_BBFunc @Bounds(fme_encoded,BOUNDING_CUBE,,)};    } ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { BoundingBoxReplacer }    INPUT  FEATURE_TYPE GEOTIFF_GEOTIFF_1    OUTPUT { FEATURE_TYPE BoundingBoxReplacer_BOX         $(BoundingBoxReplacer_BBFunc)          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { GeometryRefiner }    INPUT  FEATURE_TYPE BoundingBoxReplacer_BOX    OUTPUT { FEATURE_TYPE GeometryRefiner_OUTPUT        @Geometry(fme_simplify_geometry)         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ReprojectFactory    FACTORY_NAME { Reprojector }    INPUT  FEATURE_TYPE GeometryRefiner_OUTPUT    ENGINE { SOURCE "" DESTINATION "EPSG:4326" }    INTERPOLATION_TYPE { NearestNeighbor }    RASTER_CELL_SIZE { PreserveCells }    RASTER_TOLERANCE { "0.0" }    OUTPUT { REPROJECTED FEATURE_TYPE Reprojector_REPROJECTED          }    OUTPUT { REJECTED FEATURE_TYPE Reprojector_<REJECTED>          }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME Reprojector_<Rejected> INPUT FEATURE_TYPE Reprojector_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Reprojector<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Log<space>and<space>Troubleshoot<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { BoundsExtractor }    INPUT  FEATURE_TYPE Reprojector_REPROJECTED    OUTPUT { FEATURE_TYPE BoundsExtractor_OUTPUT         @Bounds(fme_encoded,_xmin,_xmax,_ymin,_ymax,,,GEOMETRIC)          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeRenamer }    INPUT  FEATURE_TYPE BoundsExtractor_OUTPUT 	ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    MISSING_INPUT_ATTR_HANDLING { RENAME_SET_DEFAULT REMOVE }    KEEP_OUTPUT_ATTRS_ONLY { no } 	ATTR_ACTION { "_xmin" "Xmin" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "_xmax" "Xmax" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "_ymin" "Ymin" "RENAME_SET_DEFAULT" "" }      ATTR_ACTION { "_ymax" "Ymax" "RENAME_SET_DEFAULT" "" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {CONNECTED} CreationFactory    FACTORY_NAME { AttributeCreator_Creator }    OUTPUT { FEATURE_TYPE AttributeCreator_____CREATED______ }
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT { FEATURE_TYPE AttributeCreator_____CREATED______ }    INPUT  FEATURE_TYPE AttributeRenamer_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    NUM_OF_COLUMNS 5    ATTR_ACTION { "" "NewName" "SET_TO" "<at><opencurly>fme_basename<closecurly>_<at><opencurly>fme_file_size<closecurly><lf>" "varchar<openparen>33<closeparen>" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO GEODATABASE_FILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Extents<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+GEODATABASE_FILE_1_DEF_TEMPLATE Extents   geodb_type                   {FME_FIRST_ENCOUNTERED_GEOMETRY}   GEODB_UPDATE_KEY_COLUMNS     ""   GEODB_DROP_TABLE             NO   GEODB_TRUNCATE_TABLE         NO   fme_feature_operation        INSERT   fme_table_handling           CREATE_IF_MISSING   GEODB_OBJECT_ID_NAME         OBJECTID   GEODB_OBJECT_ID_ALIAS        OBJECTID   GEODB_SHAPE_NAME             ""   GEODB_SHAPE_ALIAS            SHAPE   GEODB_CONFIG_KEYWORD         DEFAULTS   GEODB_FEATURE_DATASET        ""   GEODB_GRID{1}                ""   GEODB_AVG_NUM_POINTS         ""   GEODB_HAS_Z_VALUES           ""   GEODB_HAS_MEASURES           ""   GEODB_ANNO_REFERENCE_SCALE   ""   GEODB_ZORIGIN                ""   GEODB_XORIGIN                ""   GEODB_MEASURES_SCALE         ""   GEODB_ZSCALE                 ""   GEODB_XYSCALE                ""   fme_constant_feature_type    YES   GEODB_YORIGIN                ""   GEODB_MEASURES_ORIGIN        ""   fme_schema_feature_first     no   fme_geometry_name:SHAPE      spatial_type,   NewName                      char(33)   Xmin                         double   Xmax                         double   Ymin                         double   Ymax                         double
