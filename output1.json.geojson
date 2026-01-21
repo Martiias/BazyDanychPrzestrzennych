@@ -1,0 +1,1770 @@
+{
+	"type" : "FeatureCollection",
+	"name" : "NewFeatureType",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3960599601, 49.0073913432 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 50605272,
+				"LINK_ID" : 53189377,
+				"TYPE" : "Hotel",
+				"POI_NAME" : "Betzler",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00739",
+				"LON" : "8.39607",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3910999122, 49.0070513485 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 50605104,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Hotel",
+				"POI_NAME" : "GĂ¤stehaus Alte MĂĽnze",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00705",
+				"LON" : "8.39111",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3869498727, 49.0105513531 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1070067170,
+				"LINK_ID" : 78579196,
+				"TYPE" : "Commuter Rail Station",
+				"POI_NAME" : "Stadtbahn MĂĽhlburger Tor",
+				"ST_NAME" : "Kaiserallee",
+				"LAT" : "49.01055",
+				"LON" : "8.38696",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3897598993, 49.00744135 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 800748202,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Pharmacy",
+				"POI_NAME" : "Leopold-Apotheke",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00744",
+				"LON" : "8.38977",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3960599601, 49.0073913432 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1108398605,
+				"LINK_ID" : 53189377,
+				"TYPE" : "Sporting Goods Store",
+				"POI_NAME" : "Fassbender Tennis & Golf",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00739",
+				"LON" : "8.39607",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3944499447, 49.0079513449 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1104117072,
+				"LINK_ID" : 811161236,
+				"TYPE" : "Clothing Store",
+				"POI_NAME" : "Boutique Bombay",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00795",
+				"LON" : "8.39446",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3918799201, 49.0088913477 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1104115629,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Clothing Store",
+				"POI_NAME" : "Hemdenservice Piccobello",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00889",
+				"LON" : "8.39189",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3891998939, 49.0075213506 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1098053805,
+				"LINK_ID" : 53189365,
+				"TYPE" : "Grocery Store",
+				"POI_NAME" : "KODi",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00752",
+				"LON" : "8.38921",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.394269943, 49.0080113451 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1108706028,
+				"LINK_ID" : 811161236,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Red Box Hairstore",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00801",
+				"LON" : "8.39428",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3925199259, 49.007141347 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1132034811,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Sporting Goods Store",
+				"POI_NAME" : "Rad + Tat",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00714",
+				"LON" : "8.39253",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3677396865, 49.0174913742 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 801782356,
+				"LINK_ID" : 53179814,
+				"TYPE" : "Pharmacy",
+				"POI_NAME" : "Drais-Apotheke",
+				"ST_NAME" : "MoltkestraĂźe",
+				"LAT" : "49.01749",
+				"LON" : "8.36775",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3935799363, 49.0077013458 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1104303609,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Clothing Store",
+				"POI_NAME" : "MARCCAIN",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.0077",
+				"LON" : "8.39359",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3961399611, 49.0081913431 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1108687004,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Haargalerie T. Benz",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00819",
+				"LON" : "8.39615",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3965799654, 49.0082813426 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1108686994,
+				"LINK_ID" : 53189332,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "SchĂ¶ne Haare Karlsruhe",
+				"ST_NAME" : "BlumenstraĂźe",
+				"LAT" : "49.00828",
+				"LON" : "8.39659",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3923499242, 49.0069913471 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1108686601,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Donato Hair Creations",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00699",
+				"LON" : "8.39236",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3937199377, 49.0077813457 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1108686600,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "A + M Friseur",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00778",
+				"LON" : "8.39373",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3918799201, 49.0088913477 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1108686583,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Salon Headline",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00889",
+				"LON" : "8.39189",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3918899202, 49.0088413477 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1108686584,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Salon Ruppel",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00884",
+				"LON" : "8.3919",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3912599137, 49.0069613483 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1108686604,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Specialty Store",
+				"POI_NAME" : "Seki-Hair",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00696",
+				"LON" : "8.39127",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3965799654, 49.0082813426 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 800763380,
+				"LINK_ID" : 53189332,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Trattoria Toscana",
+				"ST_NAME" : "BlumenstraĂźe",
+				"LAT" : "49.00828",
+				"LON" : "8.39659",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.392729928, 49.0072113467 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 800760880,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Pomodoro",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00721",
+				"LON" : "8.39274",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3933599341, 49.0076313461 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1039210459,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Cafe Extrablatt",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00763",
+				"LON" : "8.39337",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3918899202, 49.0088413477 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1039210485,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Central Imbiss",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00884",
+				"LON" : "8.3919",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3951699516, 49.0077013441 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 57540923,
+				"LINK_ID" : 53189358,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "La Strada-Pasta Pasta",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.0077",
+				"LON" : "8.39518",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3931099317, 49.0074813463 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1193011622,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Portale 50",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00748",
+				"LON" : "8.39312",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3915499169, 49.0089513481 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1193011544,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Kolo City Pizza & Kebaphaus",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00895",
+				"LON" : "8.39156",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3898799009, 49.0095713499 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 57540924,
+				"LINK_ID" : 807858987,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Punjab",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00957",
+				"LON" : "8.38989",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3659896706, 49.0235313763 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1193013391,
+				"LINK_ID" : 53179612,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "La Brace",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02353",
+				"LON" : "8.366",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3912599137, 49.0069613483 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1039243132,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Heilige Sophie",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00696",
+				"LON" : "8.39127",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3891998939, 49.0075213506 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1039243141,
+				"LINK_ID" : 53189365,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Pizzeria Centrale",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00752",
+				"LON" : "8.38921",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3874998774, 49.0076413524 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1039243142,
+				"LINK_ID" : 53189365,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Shiraz",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00764",
+				"LON" : "8.38751",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3959399591, 49.0080513433 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1193028461,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Restaurant",
+				"POI_NAME" : "Pizza & Gusto",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00805",
+				"LON" : "8.39595",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.363719648, 49.0225313788 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1131716845,
+				"LINK_ID" : 999128963,
+				"TYPE" : "Park/Recreation Area",
+				"POI_NAME" : "Tennisclub Karlsruhe-West",
+				"ST_NAME" : "Berliner StraĂźe",
+				"LAT" : "49.02253",
+				"LON" : "8.36373",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3656396678, 49.0261613768 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1131716846,
+				"LINK_ID" : 999128960,
+				"TYPE" : "Park/Recreation Area",
+				"POI_NAME" : "Sportgemeinschaft Siemens Karlsruhe",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02616",
+				"LON" : "8.36565",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3659896707, 49.0236513763 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1131716848,
+				"LINK_ID" : 53179612,
+				"TYPE" : "Park/Recreation Area",
+				"POI_NAME" : "Karlsruher FuĂźball-Club West 1932",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02365",
+				"LON" : "8.366",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3956699564, 49.0075713436 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 50610381,
+				"LINK_ID" : 53191350,
+				"TYPE" : "Parking Garage/House",
+				"POI_NAME" : "Ludwigsplatz",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00757",
+				"LON" : "8.39568",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3937299379, 49.0082413457 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 57562592,
+				"LINK_ID" : 1198329790,
+				"TYPE" : "Parking Garage/House",
+				"POI_NAME" : "Postgalerie",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00824",
+				"LON" : "8.39374",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3930299311, 49.0084513465 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 50610440,
+				"LINK_ID" : 53189275,
+				"TYPE" : "Parking Garage/House",
+				"POI_NAME" : "Parkhaus Stephanplatz",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00845",
+				"LON" : "8.39304",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1178852284,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Prof. Dr. med. Uwe MĂĽllerbĂĽhl",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1178852615,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Evgenij Malysev",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3897598993, 49.00744135 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1178851649,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Beate Weinschenk",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00744",
+				"LON" : "8.38977",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3906299081, 49.0092713491 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1207963190,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Zahnarztpraxis Michael Weiland",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00927",
+				"LON" : "8.39064",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3949899499, 49.0077913443 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210891400,
+				"LINK_ID" : 53189358,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Leokadia Seidler",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00779",
+				"LON" : "8.395",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.392839929, 49.0072713466 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1211309823,
+				"LINK_ID" : 53189412,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dipl.Psych. Wolfgang Friedebach",
+				"ST_NAME" : "WaldstraĂźe",
+				"LAT" : "49.00727",
+				"LON" : "8.39285",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3920599218, 49.0087813475 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1211309940,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dipl.Psych. Uschi Timmwinkmann",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00878",
+				"LON" : "8.39207",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3920599218, 49.0087813475 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1211310597,
+				"LINK_ID" : 53191702,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Dipl.Psych. Ingeborg Kraus",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00878",
+				"LON" : "8.39207",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3906299081, 49.0092713491 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1211262263,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Gerd Schaufelberger",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00927",
+				"LON" : "8.39064",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3891998939, 49.0075113506 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1211262727,
+				"LINK_ID" : 53189365,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Medic. Stom. (R) Nikolaus Lahr",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00751",
+				"LON" : "8.38921",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3897598993, 49.00744135 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1211262551,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Tatjana SchĂĽz",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00744",
+				"LON" : "8.38977",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3960199599, 49.0081613432 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210922249,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Markus Boldyreff",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00816",
+				"LON" : "8.39603",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3856998607, 49.0112513545 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1201502688,
+				"LINK_ID" : 991685445,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Optima Klinik",
+				"ST_NAME" : "SĂĽdliche Hildapromenade",
+				"LAT" : "49.01125",
+				"LON" : "8.38571",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.393019931, 49.0084413465 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210921526,
+				"LINK_ID" : 53189275,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Ulrich Janosovits",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00844",
+				"LON" : "8.39303",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210918666,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Andreas Scherer",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210918894,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Konradmartin Schultz",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3942599429, 49.0080113451 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210918839,
+				"LINK_ID" : 811161236,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Phil. Christian KĂĽrschner",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00801",
+				"LON" : "8.39427",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210918479,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Thomas Klaas",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210918552,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Tilmann Wilde",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3850698548, 49.0118513552 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210917149,
+				"LINK_ID" : 991685445,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Manuela Kliewe",
+				"ST_NAME" : "SĂĽdliche Hildapromenade",
+				"LAT" : "49.01185",
+				"LON" : "8.38508",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3907799091, 49.0071113488 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210917306,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "ZahnĂ¤rztliche Fortbildung Karlsruhe",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00711",
+				"LON" : "8.39079",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3907799091, 49.0071113488 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210917306,
+				"LINK_ID" : 53189402,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Akademie fĂĽr ZahnĂ¤rztliche Fortbildung Karlsruhe",
+				"ST_NAME" : "SophienstraĂźe",
+				"LAT" : "49.00711",
+				"LON" : "8.39079",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3938899394, 49.0081413455 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1211385377,
+				"LINK_ID" : 1198329789,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dipl.Psych. Manfred Schmitt",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00814",
+				"LON" : "8.3939",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3878798817, 49.0102213521 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210916977,
+				"LINK_ID" : 53189085,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Michaela Lorenz",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.01022",
+				"LON" : "8.38789",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.393019931, 49.0084413465 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210917003,
+				"LINK_ID" : 53189275,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. JĂ¶rg Decker",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00844",
+				"LON" : "8.39303",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3850698548, 49.0118513552 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210917017,
+				"LINK_ID" : 991685445,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Alessandro NĂ¤her",
+				"ST_NAME" : "SĂĽdliche Hildapromenade",
+				"LAT" : "49.01185",
+				"LON" : "8.38508",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3878798817, 49.0102213521 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210917581,
+				"LINK_ID" : 53189085,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Yu Jun Huang",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.01022",
+				"LON" : "8.38789",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3878798817, 49.0102213521 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210917473,
+				"LINK_ID" : 53189085,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Medic. Manuelanarcisa Ghidersa",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.01022",
+				"LON" : "8.38789",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210918211,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Lothar Leppertsaumer",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3938899394, 49.0081413455 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210918174,
+				"LINK_ID" : 1198329789,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Peterpaul Tarne",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00814",
+				"LON" : "8.3939",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3949899499, 49.0077913443 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210918219,
+				"LINK_ID" : 53189358,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. Andrea Raufeisen",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00779",
+				"LON" : "8.395",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3942599429, 49.0080113451 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1210917908,
+				"LINK_ID" : 811161236,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Christine Jung",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00801",
+				"LON" : "8.39427",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3957299571, 49.0079613435 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1210917985,
+				"LINK_ID" : 53189357,
+				"TYPE" : "Medical Service",
+				"POI_NAME" : "Dr. med. Hans BĂĽrkle",
+				"ST_NAME" : "BĂĽrgerstraĂźe",
+				"LAT" : "49.00796",
+				"LON" : "8.39574",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.394269943, 49.0080113451 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1017154916,
+				"LINK_ID" : 811161236,
+				"TYPE" : "ATM",
+				"POI_NAME" : "Isbank",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00801",
+				"LON" : "8.39428",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.394269943, 49.0080113451 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1017154917,
+				"LINK_ID" : 811161236,
+				"TYPE" : "Bank",
+				"POI_NAME" : "Isbank",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00801",
+				"LON" : "8.39428",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3984599833, 49.0074413406 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1023843397,
+				"LINK_ID" : 931442642,
+				"TYPE" : "ATM",
+				"POI_NAME" : "Evangelische Bank",
+				"ST_NAME" : "BlumenstraĂźe",
+				"LAT" : "49.00744",
+				"LON" : "8.39847",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3984599833, 49.0074413406 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1023822445,
+				"LINK_ID" : 931442642,
+				"TYPE" : "Bank",
+				"POI_NAME" : "Evangelische Bank",
+				"ST_NAME" : "BlumenstraĂźe",
+				"LAT" : "49.00744",
+				"LON" : "8.39847",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3915399169, 49.0090013481 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1148908265,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Nightlife",
+				"POI_NAME" : "Brasil",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.009",
+				"LON" : "8.39155",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.390929911, 49.0091713487 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 57561520,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Nightlife",
+				"POI_NAME" : "Casino Royal Spielcenter",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00917",
+				"LON" : "8.39094",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3659696701, 49.0222813763 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 57552921,
+				"LINK_ID" : 53183854,
+				"TYPE" : "Higher Education",
+				"POI_NAME" : "UniversitĂ¤t Fridericiana",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02228",
+				"LON" : "8.36598",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3657796675, 49.0189713764 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 898521667,
+				"LINK_ID" : 53188572,
+				"TYPE" : "School",
+				"POI_NAME" : "Erich KĂ¤stner Schule",
+				"ST_NAME" : "MoltkestraĂźe",
+				"LAT" : "49.01897",
+				"LON" : "8.36579",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3659696701, 49.0222813763 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1005231203,
+				"LINK_ID" : 53183854,
+				"TYPE" : "School",
+				"POI_NAME" : "Kath. Kindergarten St. Konrad",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02228",
+				"LON" : "8.36598",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3660396711, 49.0232313763 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1165846659,
+				"LINK_ID" : 53179612,
+				"TYPE" : "Place of Worship",
+				"POI_NAME" : "Kirche Sankt Konrad",
+				"ST_NAME" : "HertzstraĂźe",
+				"LAT" : "49.02323",
+				"LON" : "8.36605",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3869398726, 49.0105913531 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 1039815347,
+				"LINK_ID" : 78579196,
+				"TYPE" : "Place of Worship",
+				"POI_NAME" : "Christuskirche",
+				"ST_NAME" : "Kaiserallee",
+				"LAT" : "49.01059",
+				"LON" : "8.38695",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3841698462, 49.0127413562 ]
+			},
+			"properties" : {
+				"Wariant" : "Z_Kosztami",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "54",
+				"POI_ID" : 1017621205,
+				"LINK_ID" : 53188846,
+				"TYPE" : "Court House",
+				"POI_NAME" : "Verwaltungsgericht Karlsruhe",
+				"ST_NAME" : "NĂ¶rdliche Hildapromenade",
+				"LAT" : "49.01274",
+				"LON" : "8.38418",
+				"_predicate" : "CONTAINS"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ 8.3910199119, 49.0091413486 ]
+			},
+			"properties" : {
+				"Wariant" : "Bez_Kosztow",
+				"X" : 8.360930442810059,
+				"Y" : 49.03173828125,
+				"_total_cost" : "4624.099089844143",
+				"POI_ID" : 800841281,
+				"LINK_ID" : 807858986,
+				"TYPE" : "Petrol/Gasoline Station",
+				"POI_NAME" : "ARAL",
+				"ST_NAME" : "AmalienstraĂźe",
+				"LAT" : "49.00914",
+				"LON" : "8.39103",
+				"_predicate" : "CONTAINS"
+			}
+		}
+	]
+}
